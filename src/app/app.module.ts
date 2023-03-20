@@ -1,3 +1,12 @@
+/*
+============================================
+; Title: app.module.ts
+; Author: Ace Baugh
+; Date: March 15, 2023
+; Description: this module is the app module
+============================================
+*/
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -17,7 +26,7 @@ import { MatIconModule } from '@angular/material/icon';
     AppComponent,
     HomeComponent,
     AuthLayoutComponent,
-    BaseLayoutComponent
+    BaseLayoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,9 +35,9 @@ import { MatIconModule } from '@angular/material/icon';
     FlexLayoutModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

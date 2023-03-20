@@ -1,3 +1,12 @@
+/*
+============================================
+; Title: main.ts
+; Author: Ace Baugh
+; Date: March 15, 2023
+; Description: this module is the main module
+============================================
+*/
+
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
