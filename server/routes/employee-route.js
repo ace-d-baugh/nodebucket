@@ -14,6 +14,34 @@ const Employee = require('../models/employee');
 // Create the router.
 const router = express.Router();
 
+// Swagger written in YAML code to describe the findEmployeeById API
+/**
+ * findEmployeeById
+ * @openapi
+ * /api/employees/{id}:
+ *   get:
+ *     tags:
+ *       - Employees
+ *     description:  API for returning employees by employeeId
+ *     summary: returns employee by employeeId
+ *     parameters:
+ *       - name: id
+ *         in: path
+ *         required: true
+ *         description: Employees ID
+ *         schema:
+ *           type: Number
+ *     responses:
+ *       '200':
+ *         description: Employee document
+ *       '401':
+ *         description: Invalid employeeId
+ *       '500':
+ *         description: Server exception
+ *       '501':
+ *         description: MongoDB exception
+ */
+
 //find employee by id
 router.get('/:id', async(req, res, next) => {
 
