@@ -30,7 +30,7 @@ const router = express.Router();
  *         required: true
  *         description: Employees ID
  *         schema:
- *           type: Number
+ *           type: number
  *     responses:
  *       '200':
  *         description: Employee document

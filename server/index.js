@@ -66,7 +66,7 @@ app.use(function(req, res, next) {
   next(createError(404));
 })
 
-// Error handling for 500 errors.
+// Error handling for any other kind of error.
 app.use(function(err, req, res, next) {
   res.status(err.status || 500);
 
