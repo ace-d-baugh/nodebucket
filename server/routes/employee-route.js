@@ -49,6 +49,7 @@ router.get('/:id', async(req, res, next) => {
   let empId = req.params.id;
   empId = parseInt(empId, 10);
 
+  // Check if the employee id is a number.
   if (isNaN(empId)) {
     // Log the error to the console.
     const err = new Error('Bad Request');

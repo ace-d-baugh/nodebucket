@@ -21,6 +21,25 @@
         <button class="navbar-link" mat-button>About</button>
       </div>
 
+      <div fxFlex></div>
+
+      <div>
+
+        <button mat-icon-button [matMenuTriggerFor]="profileMenu" aria-label="User profile menu">
+          <mat-icon>perm_identity</mat-icon>
+        </button>
+
+        <mat-menu #profileMenu="matMenu">
+          <p>
+            Signed in as {{sessionName}}
+          </p>
+          <button mat-menu-item (click)="logout()">
+            <mat-icon>logout</mat-icon>
+            <span>Logout</span>
+          </button>
+        </mat-menu>
+      </div>
+
     </mat-toolbar>
   </nav>
 
