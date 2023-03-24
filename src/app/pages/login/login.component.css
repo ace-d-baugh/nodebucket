@@ -1,41 +1,54 @@
+.container {
+  height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-primary);
+}
+
 .login-container {
-  width:35%;
-  margin: 10% auto;
+  background: var(--gray-transparent);
+  margin-top: -200px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 250px;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .login-title {
   text-align: center;
-  font-size: 48px;
-  font-weight: lighter;
-  padding: 20px;
+  font-size: 35px;
 }
 
 .login-subtitle {
   text-align: center;
-  font-weight: lighter;
-  padding: 5px;
-  color: blue;
+  color: var(--accent);
 }
 
-.mat-card {
-  padding: 0px;
+.sign-in-header {
+  background: var(--secondary-transparent);
+  height: 80px;
+  color: var(--gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
 }
 
-.mat-card-header {
-  background-color: blue;
-  padding-left: 8%;
-  padding-top: 15px;
-  color: white;
+.sign-in-container {
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.mat-card-content {
-  padding: 20px;
-}
-
-.mat-card-actions {
-  padding: 25px;
-}
-
-.btn-lg {
-  height: 36px;
+p-messages {
+  height: 20px;
 }

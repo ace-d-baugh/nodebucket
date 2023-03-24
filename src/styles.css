@@ -9,5 +9,30 @@
 
 /* You can add global styles to this file, and also import other style files */
 
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&display=swap');
+
+:root {
+  --primary: #0e1a40;
+  --primary-transparent: rgba(14, 26, 64, 0.7);
+  --secondary: #222f5b;
+  --secondary-transparent: rgba(34, 47, 91, 0.7);
+  --gray: #BEBEBE;
+  --gray-transparent: rgba(190, 190, 190, 0.7);
+  --accent: #946B2D;
+  --accent-transparent: rgba(148, 107, 45, 0.7);
+  --warn: #6C161C;
+  --warn-transparent: rgba(108, 22, 28, 0.7);
+  --font-primary: 'Kaisei Opti', serif;
+}
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  background: url(./assets/wallpaper.png) repeat center center fixed;
+  margin: 0;
+  font-family: var(--font-primary);
+}
+
+.wallpaper-cover {
+  background: var(--primary-transparent);
+  height: 100%;
+}
