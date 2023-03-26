@@ -9,23 +9,26 @@
 
 /* You can add global styles to this file, and also import other style files */
 
-@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&display=swap");
 
 :root {
   --primary: #0e1a40;
   --primary-transparent: rgba(14, 26, 64, 0.7);
   --secondary: #222f5b;
   --secondary-transparent: rgba(34, 47, 91, 0.7);
-  --gray: #BEBEBE;
+  --gray: #bebebe;
   --gray-transparent: rgba(190, 190, 190, 0.7);
-  --accent: #946B2D;
+  --accent: #946b2d;
   --accent-transparent: rgba(148, 107, 45, 0.7);
-  --warn: #6C161C;
+  --warn: #6c161c;
   --warn-transparent: rgba(108, 22, 28, 0.7);
-  --font-primary: 'Kaisei Opti', serif;
+  --font-primary: "Kaisei Opti", serif;
 }
 
-html, body { height: 100%; }
+html,
+body {
+  height: 100%;
+}
 body {
   background: url(./assets/wallpaper.png) repeat center center fixed;
   margin: 0;
@@ -36,3 +39,77 @@ body {
   background: var(--primary-transparent);
   height: 100%;
 }
+
+p-messages {
+  margin:  0;
+  padding: 1rem 0 .5rem 0;
+  display: block !important;
+  height: 4.5rem !important;
+}
+
+.p-component {
+    font-family: var(--font-primary) !important;
+    font-size: .8rem !important;
+    font-weight: 700 !important;
+}
+
+.p-message.p-message-error {
+  background: var(--warn-transparent) !important;
+  border: solid transparent !important;
+  border-width: 0 0 0 0 !important;
+  color: var(--warn) !important;
+  font-weight: 700 !important;
+}
+
+.p-message-wrapper {
+  padding: 0.5rem 1rem !important;
+}
+.p-message.p-message-error .p-message-icon {
+  color: var(--warn) !important;
+}
+
+.p-message.p-message-error .p-message-close {
+  color: var(--warn) !important;
+}
+
+.mat-error {
+  color: var(--warn) !important;
+}
+
+.p-message .p-message-summary {
+    font-weight: 700;
+    font-family: var(--font-primary) !important;
+}
+
+.mat-form-field {
+  font-family: var(--font-primary) !important;
+  font-size: inherit;
+  color: var(--primary) !important;
+  font-weight: 700 !important;
+  line-height: 1.125;
+  letter-spacing: normal;
+}
+
+.mat-input-element {
+  caret-color: var(--secondary) !important;
+}
+
+.mat-form-field-ripple {
+    background-color: var(--primary) !important;
+}
+
+.mat-form-field.mat-form-field-invalid .mat-form-field-ripple, .mat-form-field.mat-form-field-invalid .mat-form-field-ripple.mat-accent {
+    background-color: var(--warn) !important;
+}
+
+.sign-in-form {
+  width: 85%;
+}
+
+.mat-form-field {
+    display: block !important;
+    position: relative;
+    text-align: left;
+}
+
+
