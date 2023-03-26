@@ -11,27 +11,30 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 
+// This is the base layout component
 @Component({
   selector: 'app-base-layout',
   templateUrl: './base-layout.component.html',
   styleUrls: ['./base-layout.component.css'],
 })
 export class BaseLayoutComponent implements OnInit {
-
+  // this will be the session name
   sessionName: string;
-  year: number
+  // this will be the current year
+  year: number;
 
   constructor(private cookieService: CookieService, private router: Router) {
+    // this is the cookie service to get the session name
     this.sessionName = this.cookieService.get('session_name');
-    this.year = new Date().getFullYear();
+    // get the current year
+    this.year = Date.now();
   }
 
   ngOnInit(): void {}
 
   logout() {
+    // delete the cookies and navigate to the login page
     this.cookieService.deleteAll();
     this.router.navigate(['/session/login']);
   }
 }
-
-

@@ -6,15 +6,19 @@ import { Message } from 'primeng/api';
 import { Employee } from 'src/app/shared/models/employee.interface';
 import { SessionService } from 'src/app/shared/session.service';
 
+// This is a component for the login page
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
+  // An array of error messages
   errorMessage: Message[] = [];
+  // An employee object
   employee: Employee;
 
+  // A form group for the login form
   loginForm: FormGroup = this.fb.group({
     empId: [
       null,
@@ -28,23 +32,36 @@ export class LoginComponent implements OnInit {
     private router: Router,
     private sessionService: SessionService
   ) {
+    // Initialize the employee object
     this.employee = {} as Employee;
   }
 
   ngOnInit(): void {}
 
+  // A function to handle the login process
   login() {
-    const empId = this.loginForm.controls['empId'].value
+    // Get the employee id from the login form
+    const empId = this.loginForm.controls['empId'].value;
 
+    // Call the session service to find the employee by id
     this.sessionService.findEmployeeById(empId).subscribe({
-
       next: (res: any) => {
         if (res) {
+          // If the employee is found, set the session cookies and navigate to the home page
           this.employee = res;
-          this.cookieService.set('session_user', this.employee.empId.toString(), 1);
-          this.cookieService.set('session_user_name', '${this.employee.firstName} ${this.employee.lastName}', 1);
+          this.cookieService.set(
+            'session_user',
+            this.employee.empId.toString(),
+            1
+          );
+          this.cookieService.set(
+            'session_name',
+            `${this.employee.firstName} ${this.employee.lastName}`,
+            1
+          );
           this.router.navigate(['/']);
         } else {
+          // If the employee is not found, display an error message
           this.errorMessage = [
             {
               severity: 'error',
@@ -55,6 +72,7 @@ export class LoginComponent implements OnInit {
         }
       },
       error: (err: any) => {
+        // If there is an error, display an error message
         console.log(err);
         this.errorMessage = [
           { severity: 'error', summary: 'Error', detail: err.message },

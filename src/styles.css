@@ -25,14 +25,24 @@
   --font-primary: "Kaisei Opti", serif;
 }
 
+* {
+  font-family: var(--font-primary);
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
 }
+
 body {
   background: url(./assets/wallpaper.png) repeat center center fixed;
   margin: 0;
-  font-family: var(--font-primary);
+  font-family: var(--font-primary) !important;
+}
+
+button {
+  font-family: var(--font-primary) !important;
 }
 
 .wallpaper-cover {
@@ -41,16 +51,16 @@ body {
 }
 
 p-messages {
-  margin:  0;
-  padding: 1rem 0 .5rem 0;
+  margin: 0;
+  padding: 1rem 0 0.5rem 0;
   display: block !important;
   height: 4.5rem !important;
 }
 
 .p-component {
-    font-family: var(--font-primary) !important;
-    font-size: .8rem !important;
-    font-weight: 700 !important;
+  font-family: var(--font-primary) !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
 }
 
 .p-message.p-message-error {
@@ -77,8 +87,8 @@ p-messages {
 }
 
 .p-message .p-message-summary {
-    font-weight: 700;
-    font-family: var(--font-primary) !important;
+  font-weight: 700;
+  font-family: var(--font-primary) !important;
 }
 
 .mat-form-field {
@@ -95,11 +105,12 @@ p-messages {
 }
 
 .mat-form-field-ripple {
-    background-color: var(--primary) !important;
+  background-color: var(--primary) !important;
 }
 
-.mat-form-field.mat-form-field-invalid .mat-form-field-ripple, .mat-form-field.mat-form-field-invalid .mat-form-field-ripple.mat-accent {
-    background-color: var(--warn) !important;
+.mat-form-field.mat-form-field-invalid .mat-form-field-ripple,
+.mat-form-field.mat-form-field-invalid .mat-form-field-ripple.mat-accent {
+  background-color: var(--warn) !important;
 }
 
 .sign-in-form {
@@ -107,9 +118,31 @@ p-messages {
 }
 
 .mat-form-field {
-    display: block !important;
-    position: relative;
-    text-align: left;
+  display: block !important;
+  position: relative;
+  text-align: left;
 }
 
+.mat-menu-panel {
+  color: var(--primary) !important;
+  background: var(--gray) !important;
+  font-weight: 700 !important;
+}
 
+.mat-menu-item .mat-icon-no-color, .mat-menu-submenu-icon {
+    color: var(--accent) !important;
+    font-weight: 700;
+}
+
+.mat-menu-item {
+  font-size: 1rem !important;
+}
+
+.mat-typography p {
+    margin: 0;
+}
+
+.mat-toolbar {
+    background: var(--primary) !important;
+    color: var(--gray) !important;
+}
