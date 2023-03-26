@@ -2,7 +2,7 @@
 ============================================
 ; Title: base-layout.component.css
 ; Author: Ace Baugh
-; Date: March 15, 2023
+; Date: March 26, 2023
 ; Description: Base layout component styles
 ============================================
 */
@@ -23,7 +23,8 @@
   font-family: var(--font-primary) !important;
 }
 
-.logo, .signed-in-container {
+.logo,
+.signed-in-container {
   width: 80px;
   display: flex;
   align-items: center;
@@ -82,4 +83,3 @@
 .bu-link:hover {
   text-decoration: underline;
 }
-

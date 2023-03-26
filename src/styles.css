@@ -2,7 +2,7 @@
 ============================================
 ; Title: styles.css
 ; Author: Ace Baugh
-; Date: March 15, 2023
+; Date: March 26, 2023
 ; Description: Styles for the app
 ============================================
 */
@@ -130,9 +130,10 @@ p-messages {
   font-weight: 700 !important;
 }
 
-.mat-menu-item .mat-icon-no-color, .mat-menu-submenu-icon {
-    color: var(--accent) !important;
-    font-weight: 700;
+.mat-menu-item .mat-icon-no-color,
+.mat-menu-submenu-icon {
+  color: var(--accent) !important;
+  font-weight: 700;
 }
 
 .mat-menu-item {
@@ -140,10 +141,10 @@ p-messages {
 }
 
 .mat-typography p {
-    margin: 0;
+  margin: 0;
 }
 
 .mat-toolbar {
-    background: var(--primary) !important;
-    color: var(--gray) !important;
+  background: var(--primary) !important;
+  color: var(--gray) !important;
 }

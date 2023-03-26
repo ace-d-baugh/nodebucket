@@ -2,7 +2,7 @@
 ============================================
 ; Title: main.ts
 ; Author: Ace Baugh
-; Date: March 15, 2023
+; Date: March 26, 2023
 ; Description: this module is the main module
 ============================================
 */
@@ -17,5 +17,6 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+platformBrowserDynamic()
+  .bootstrapModule(AppModule)
+  .catch((err) => console.error(err));

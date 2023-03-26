@@ -2,7 +2,7 @@
 ============================================
 ; Title: app-routing.module.ts
 ; Author: Ace Baugh
-; Date: March 15, 2023
+; Date: March 26, 2023
 ; Description: this module is the app routing module
 ============================================
 */
@@ -51,9 +51,8 @@ const routes: Routes = [
         component: NotFoundComponent,
       },
     ],
-  }
+  },
 ];
-
 
 @NgModule({
   imports: [

@@ -2,7 +2,7 @@
 ============================================
 ; Title: auth.layout.component.ts
 ; Author: Ace Baugh
-; Date: March 15, 2023
+; Date: March 26, 2023
 ; Description: this component is the auth layout component
 ============================================
 */
