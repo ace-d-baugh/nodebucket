@@ -14,12 +14,16 @@
 }
 
 .navbar {
-  background-color: var(--primary);
+  background-color: var(--primary-transparent);
+  box-shadow: 0 0 2px var(--gray),
+              0 0 20px 20px var(--secondary);
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: var(--font-primary) !important;
+  z-index: 1;
+  position: sticky;
 }
 
 .logo,
@@ -65,6 +69,9 @@
   bottom: 0;
   position: absolute;
   width: 100%;
+  box-shadow: 0 0 2px var(--gray),
+              0 0 20px 20px var(--secondary);
+
 }
 
 .footer-content {
