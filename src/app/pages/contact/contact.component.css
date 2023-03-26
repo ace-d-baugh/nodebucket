@@ -1,0 +1,79 @@
+/*
+============================================
+; Title: contact.component.css
+; Author: Ace Baugh
+; Date: March 26, 2023
+; Description: this is the contact component css file
+============================================
+*/
+
+.btn {
+  height: 40px;
+  margin-top: 1rem !important;
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary) !important;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  padding: 0 16px;
+  border-radius: 10px;
+  overflow: visible;
+  transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--accent) !important;
+  color: var(--primary) !important;
+  border: 2px solid var(--secondary) !important;
+}
+
+.contact-content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  color: var(--primary) !important;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  color: var(--primary) !important;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  color: var(--primary) !important;
+}
+
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.contact-text {
+  font-size: .75rem;
+  font-weight: 700;
+  color: var(--primary) !important;
+}

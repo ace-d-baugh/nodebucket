@@ -148,3 +148,28 @@ p-messages {
   background: var(--primary) !important;
   color: var(--gray) !important;
 }
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.transparent-text {
+  color: transparent;
+}
+
+.default-text {
+  color: var(--primary);
+}
+

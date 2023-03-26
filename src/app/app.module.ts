@@ -22,6 +22,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CookieService } from 'ngx-cookie-service';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 // Angular Material
 import { MatMenuModule } from '@angular/material/menu';
@@ -44,6 +46,8 @@ import { MessagesModule } from 'primeng/messages';
     AuthLayoutComponent,
     BaseLayoutComponent,
     LoginComponent,
+    AboutComponent,
+    ContactComponent,
     NotFoundComponent,
   ],
   imports: [

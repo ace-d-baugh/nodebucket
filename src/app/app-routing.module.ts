@@ -16,6 +16,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 import { AuthGuard } from './auth.guard';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
   // a route for the home page
@@ -38,6 +40,28 @@ const routes: Routes = [
       {
         path: 'login',
         component: LoginComponent,
+      },
+    ],
+  },
+  // a route for the about page
+  {
+    path: 'about',
+    component: BaseLayoutComponent,
+    children: [
+      {
+        path: '',
+        component: AboutComponent,
+      },
+    ],
+  },
+  // a route for the contact page
+  {
+    path: 'contact',
+    component: BaseLayoutComponent,
+    children: [
+      {
+        path: '',
+        component: ContactComponent,
       },
     ],
   },
