@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+// This is a service for the session
 export class SessionService {
 
   constructor(private http: HttpClient) { }

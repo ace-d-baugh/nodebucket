@@ -9,6 +9,7 @@
 
 import { Component } from '@angular/core';
 
+// NotFound component
 @Component({
   selector: 'app-not-found',
   templateUrl: './not-found.component.html',

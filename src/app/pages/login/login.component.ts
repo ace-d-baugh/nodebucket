@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
     ],
   });
 
+  // Constructor for the login component
   constructor(
     private fb: FormBuilder,
     private cookieService: CookieService,
@@ -49,16 +50,19 @@ export class LoginComponent implements OnInit {
         if (res) {
           // If the employee is found, set the session cookies and navigate to the home page
           this.employee = res;
+          // Set the session cookies
           this.cookieService.set(
             'session_user',
             this.employee.empId.toString(),
             1
           );
+          // Set the session cookies
           this.cookieService.set(
             'session_name',
             `${this.employee.firstName} ${this.employee.lastName}`,
             1
           );
+          // Navigate to the home page
           this.router.navigate(['/']);
         } else {
           // If the employee is not found, display an error message

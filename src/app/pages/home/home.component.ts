@@ -9,6 +9,7 @@
 
 import { Component, OnInit } from '@angular/core';
 
+// Home component
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
