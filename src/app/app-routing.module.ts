@@ -13,10 +13,12 @@ import { BaseLayoutComponent } from './shared/base-layout/base-layout.component'
 import { HomeComponent } from './pages/home/home.component';
 import { AuthLayoutComponent } from './shared/auth-layout/auth-layout.component';
 import { LoginComponent } from './pages/login/login.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
+  // a route for the home page
   {
     path: '',
     component: BaseLayoutComponent,
@@ -28,6 +30,7 @@ const routes: Routes = [
       },
     ],
   },
+  // a route for the login page
   {
     path: 'session',
     component: AuthLayoutComponent,
@@ -37,8 +40,20 @@ const routes: Routes = [
         component: LoginComponent,
       },
     ],
+  },
+  // a 404 page for everything not found
+  {
+    path: '**',
+    component: BaseLayoutComponent,
+    children: [
+      {
+        path: '',
+        component: NotFoundComponent,
+      },
+    ],
   }
 ];
+
 
 @NgModule({
   imports: [

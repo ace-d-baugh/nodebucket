@@ -50,8 +50,11 @@
 
 .main-content {
   background-color: var(--gray-transparent);
+  color: var(--secondary);
+  font-weight: 700;
   height: 100%;
   max-width: 1280px;
+  min-width: 800px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;

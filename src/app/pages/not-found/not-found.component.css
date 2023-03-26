@@ -1,0 +1,53 @@
+/*
+============================================
+; Title: not-found.css
+; Author: Ace Baugh
+; Date: March 15, 2023
+; Description: this is the not-found.css file
+============================================
+*/
+
+
+.btn {
+  height: 40px;
+  margin-top: 1rem !important;
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary) !important;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  padding: 0 16px;
+  border-radius: 10px;
+  overflow: visible;
+  transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--accent) !important;
+  color: var(--primary) !important;
+  border: 2px solid var(--secondary) !important;
+}
+
+.not-found-content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  color: var(--primary) !important;
+}
+
+.warn {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  color: var(--warn) !important;
+}
+
+.pi-ban {
+  margin: 3rem;
+  font-size: 10rem;
+  font-weight: 700;
+}
