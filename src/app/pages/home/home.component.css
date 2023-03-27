@@ -9,6 +9,7 @@
 
 .main-welcome {
   margin-top: 30px;
+  padding: 40px 40px 0;
 }
 
 .title {
@@ -23,4 +24,159 @@
   text-align: center;
   font-size: 14px;
   padding: 0 30px;
+}
+
+.main-content {
+  padding: 0 40px;
+}
+
+.item-create-container {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background-color: var(--secondary);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  border: 2px solid var(--accent);
+  position: relative;
+}
+
+form {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-input {
+  width: 100%;
+  height: 50px;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  color: var(--primary);
+  background-color: var(--gray);
+  padding: 0 10px;
+}
+
+.item-input:focus {
+  outline: none;
+  border: 2px solid var(--accent);
+}
+
+.item-input::placeholder {
+  color: var(--primary);
+}
+
+.item-input-button {
+  position: absolute;
+  right: 35px;
+}
+
+.item-add {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.all-tasks-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+  gap: 10px;
+}
+
+.tasks {
+  width: 100%;
+}
+
+.tasks-header {
+  color: var(--accent);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.tasks-container {
+  background-color: var(--gray);
+  border-radius: 5px;
+  margin: 10px 0;
+  border: 2px solid var(--accent);
+  overflow: hidden;
+}
+
+.tasks-counter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--secondary);
+}
+
+.tasks-counter-title, .tasks-counter-count {
+  color: var(--gray);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.task-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+  border-radius: 5px;
+  margin: 5px 0;
+  border: 2px solid var(--secondary);
+  padding: 0 5px;
+}
+
+.task-item-title, .task-move {
+  text-align: left;
+  color: var(--secondary);
+  padding: 5px;
+}
+
+.task-item-title {
+  flex: 1;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.tasks-item-delete {
+  color: var(--warn);
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0 5px;
+}
+
+.empty-spot {
+  display: flex;
+  width: 100%;
+  min-height: 50px;
+  border-radius: 5px;
+  margin: 5px 0;
+  border: 2px dashed var(--secondary);
 }

@@ -17,3 +17,90 @@
     </span>
   </h1>
 </div>
+
+<div fxLayout="column" class="main-content">
+  <!-- Create Items for ToDo List -->
+  <div class="item-create-container">
+    <form>
+      <input class="item-input" placeholder="Enter Task Name..." />
+      <div class="item-input-button">
+        <!-- primeng plus icon -->
+        <i class="pi pi-plus-circle item-add"></i>
+      </div>
+    </form>
+  </div>
+
+  <!-- Tasks Viewing Area -->
+  <div class="all-tasks-container">
+    <div class="row">
+      <!-- To-Do Tasks -->
+      <div class="tasks">
+        <div class="tasks-header">ToDo</div>
+        <div class="tasks-container">
+          <div class="tasks-counter">
+            <div class="tasks-counter-title">ToDo Items:</div>
+            <div class="tasks-counter-count">4</div>
+          </div>
+          <div class="tasks-list">
+            <div class="task-item">
+              <i class="pi pi-bars task-move"></i>
+              <div class="task-item-title">This is an item in my ToDo list</div>
+              <i class="pi pi-trash tasks-item-delete"></i>
+            </div>
+            <div class="task-item">
+              <i class="pi pi-bars task-move"></i>
+              <div class="task-item-title">This is an item in my ToDo list</div>
+              <i class="pi pi-trash tasks-item-delete"></i>
+            </div>
+            <div class="task-item">
+              <i class="pi pi-bars task-move"></i>
+              <div class="task-item-title">This is an item in my ToDo list</div>
+              <i class="pi pi-trash tasks-item-delete"></i>
+            </div>
+            <div class="task-item">
+              <i class="pi pi-bars task-move"></i>
+              <div class="task-item-title">This is an item in my ToDo list</div>
+              <i class="pi pi-trash tasks-item-delete"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Doing Tasks
+      <div class="tasks">
+        <div class="tasks-header">Doing</div>
+        <div class="tasks-container">
+          <div class="tasks-counter">
+            <div class="tasks-counter-title">Doing Tasks:</div>
+            <div class="tasks-counter-count">1</div>
+          </div>
+          <div class="tasks-list">
+            <div class="task-item">
+              <i class="pi pi-bars task-move"></i>
+              <div class="task-item-title">This is an item in my ToDo list This is an item in my ToDo list This is an item in my ToDo list This is an item in my ToDo list</div>
+              <i class="pi pi-trash tasks-item-delete"></i>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Done Tasks -->
+      <div class="tasks">
+        <div class="tasks-header">Done</div>
+        <div class="tasks-container">
+          <div class="tasks-counter">
+            <div class="tasks-counter-title">Done Items:</div>
+            <div class="tasks-counter-count">8</div>
+          </div>
+          <div class="tasks-list">
+            <div class="task-item">
+              <i class="pi pi-bars task-move"></i>
+              <div class="task-item-title">This</div>
+              <i class="pi pi-trash tasks-item-delete"></i>
+            </div>
+            <div class="empty-spot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
