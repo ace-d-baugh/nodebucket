@@ -40,11 +40,19 @@
       </button>
 
       <mat-menu #profileMenu="matMenu">
+        <div *ngIf="sessionName">
         <p class="signed-in-as">Signed in as {{ sessionName }}</p>
         <button mat-menu-item (click)="logout()">
           <mat-icon>logout</mat-icon>
           <span>Logout</span>
         </button>
+        </div>
+        <div *ngIf="!sessionName">
+        <button mat-menu-item routerLink="/">
+          <mat-icon>login</mat-icon>
+          <span>Login</span>
+        </button>
+        </div>
       </mat-menu>
     </div>
   </nav>
