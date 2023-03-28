@@ -312,3 +312,11 @@
     }
   ]
 }
+[3/28/2023, 2:05:09 PM] server	 employee-route.js - {
+  _id: new ObjectId("64190421b9a84caff39b134f"),
+  empId: 1010,
+  firstName: 'Isao',
+  lastName: 'Tomita',
+  todo: [],
+  done: []
+}
