@@ -1,0 +1,36 @@
+[3/27/2023, 8:31:04 PM] server	 employee-route.js - empId could not be parsed: Bad Request
+[3/27/2023, 8:58:30 PM] server	 employee-route.js - NotFoundError: Not Found
+[3/27/2023, 8:59:47 PM] server	 employee-route.js - empId could not be parsed: Bad Request
+[3/27/2023, 9:21:48 PM] server	 employee-route.js - empId could not be parsed: Bad Request
+[3/27/2023, 9:21:51 PM] server	 employee-route.js - NotFoundError: Not Found
+[3/27/2023, 9:26:30 PM] server	 employee-route.js - NotFoundError: Not Found
+[3/27/2023, 9:47:32 PM] server	 employee-route.js - false
+[3/27/2023, 10:11:27 PM] server	 employee-route.js - false
+[3/27/2023, 10:17:12 PM] server	 employee-route.js - false
+[3/27/2023, 10:19:38 PM] server	 employee-route.js - NotFoundError: Not Found
+[3/27/2023, 10:32:29 PM] server	 employee-route.js - false
+[3/27/2023, 10:34:34 PM] server	 employee-route.js - false
+[3/27/2023, 10:43:01 PM] server	 employee-route.js - false
+[3/27/2023, 10:44:10 PM] server	 employee-route.js - false
+[3/27/2023, 10:45:16 PM] server	 employee-route.js - false
+[3/27/2023, 10:52:53 PM] server	 employee-route.js - req.params.empId must be a number poop
+[3/27/2023, 10:53:45 PM] server	 employee-route.js - false
+[3/27/2023, 10:58:49 PM] server	 employee-route.js - empId could not be parsed: poop
+[3/27/2023, 11:06:22 PM] server	 employee-route.js - NotFoundError: Not Found
+[3/27/2023, 11:10:22 PM] server	 employee-route.js - NotFoundError: Not Found
+[3/27/2023, 11:11:32 PM] server	 employee-route.js - NotFoundError: Not Found
+[3/27/2023, 11:12:12 PM] server	 employee-route.js - NotFoundError: Not Found
+[3/27/2023, 11:13:03 PM] server	 employee-route.js - NotFoundError: Not Found
+[3/27/2023, 11:14:50 PM] server	 employee-route.js - NotFoundError: Not Found
+[3/27/2023, 11:15:09 PM] server	 employee-route.js - NotFoundError: Not Found
+[3/27/2023, 11:16:43 PM] server	 employee-route.js - NotFoundError: Not Found
+[3/27/2023, 11:17:28 PM] server	 employee-route.js - req.params.empId must be a number piss
+[3/27/2023, 11:19:22 PM] server	 employee-route.js - req.params.empId must be a number piss
+[3/27/2023, 11:19:43 PM] server	 employee-route.js - false
+[3/27/2023, 11:22:03 PM] server	 employee-route.js - Error: Bad Request
+[3/27/2023, 11:22:25 PM] server	 employee-route.js - Error: Bad Request
+[3/27/2023, 11:42:08 PM] server	 employee-route.js - Error: Bad Request
+[3/27/2023, 11:45:35 PM] server	 employee-route.js - Error: Bad Request
+[3/27/2023, 11:48:30 PM] server	 employee-route.js - Error: Bad Request
+[3/27/2023, 11:48:53 PM] server	 employee-route.js - Error: Bad Request
+[3/28/2023, 12:14:12 AM] server	 employee-route.js - NotFoundError: Not Found
