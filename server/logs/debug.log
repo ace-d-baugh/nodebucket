@@ -203,3 +203,112 @@
     }
   ]
 }
+[3/28/2023, 10:37:40 AM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [],
+  todo: [
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642246b907c7c76bf07b99c7")
+    }
+  ]
+}
+[3/28/2023, 10:45:15 AM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  firstName: 'Jeff',
+  lastName: 'Lynne',
+  todo: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ],
+  done: [],
+  __v: 1
+}
+[3/28/2023, 10:49:02 AM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [],
+  todo: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[3/28/2023, 11:01:28 AM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [],
+  todo: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[3/28/2023, 11:03:19 AM] server	 employee-route.js - {
+  _id: new ObjectId("641903e9b9a84caff39b134e"),
+  empId: 1009,
+  firstName: 'David',
+  lastName: 'Gahan',
+  todo: [
+    {
+      text: 'Eat a banana',
+      _id: new ObjectId("642301b7f6cb8ab1597c0475")
+    }
+  ],
+  done: [],
+  __v: 1
+}
+[3/28/2023, 11:13:17 AM] server	 employee-route.js - {
+  _id: new ObjectId("641903e9b9a84caff39b134e"),
+  empId: 1009,
+  firstName: 'David',
+  lastName: 'Gahan',
+  __v: 2,
+  done: [],
+  todo: [
+    {
+      text: 'Eat a banana',
+      _id: new ObjectId("642301b7f6cb8ab1597c0475")
+    },
+    {
+      text: 'Take out the trash',
+      _id: new ObjectId("6423040d57d521c4eb78b74e")
+    }
+  ]
+}
+[3/28/2023, 11:35:44 AM] server	 employee-route.js - {
+  _id: new ObjectId("641903e9b9a84caff39b134e"),
+  empId: 1009,
+  done: [],
+  todo: [
+    {
+      text: 'Eat a banana',
+      _id: new ObjectId("642301b7f6cb8ab1597c0475")
+    },
+    {
+      text: 'Take out the trash',
+      _id: new ObjectId("6423040d57d521c4eb78b74e")
+    }
+  ]
+}
+[3/28/2023, 11:36:36 AM] server	 employee-route.js - {
+  _id: new ObjectId("641903e9b9a84caff39b134e"),
+  empId: 1009,
+  done: [],
+  todo: [
+    {
+      text: 'Eat a banana',
+      _id: new ObjectId("642301b7f6cb8ab1597c0475")
+    },
+    {
+      text: 'Take out the trash',
+      _id: new ObjectId("6423040d57d521c4eb78b74e")
+    }
+  ]
+}

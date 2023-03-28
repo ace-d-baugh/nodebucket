@@ -3,7 +3,7 @@
 ; Title: employee-route.js
 ; Author: Ace Baugh
 ; Date: March 26, 2023
-; Description: Employee route
+; Description: Employee route file
 ============================================
 */
 
@@ -238,7 +238,7 @@ router.post("/:empId/tasks", async (req, res, next) => {
           const result = await emp.save();
           console.log(result);
           debugLogger({ filename: myFile, message: result });
-          res.status(204).send();
+          res.status(204).send(newTask);
         }
       } else {
         console.log("empId is a number, but not an employee");
@@ -258,6 +258,63 @@ router.post("/:empId/tasks", async (req, res, next) => {
     next(err); // Send the error to the next middleware.
   }
 });
+
+// Swagger written in YAML code to describe the deleteTask API
+/**
+ * deleteTask
+ * @openapi
+ * /api/employees/{id}/tasks/{taskId}:
+ *   delete:
+ *     tags:
+ *       - Employees
+ *     description: API for deleting a task for an employee
+ *     summary: deletes a task for an employee
+ *     parameters:
+ *       - name: id
+ *         in: path
+ *         required: true
+ *         description: Employee ID
+ *         schema:
+ *           type: integer
+ *       - name: taskId
+ *         in: path
+ *         required: true
+ *         description: Task ID
+ *         schema:
+ *           type: string
+ *     responses:
+ *       '204':
+ *         description: Task deleted
+ *       '400':
+ *         description: Bad Request
+ *       '404':
+ *         description: Employee not found
+ *       '500':
+ *         description: Internal Server Error
+ */
+router.delete("/:empId/tasks/:taskId", async (req, res, next) => {
+  // Get the employee id from the request.
+  let empId = req.params.empId;
+  let taskId = "";
+
+  const err = checkNum(empId);
+
+  if (err === false) {
+    try {
+
+    } catch (err) {
+      next(err);
+    }
+  } else {
+    console.error("req.params.empId must be a number. unlike: ", empId);
+    errorLogger({
+      filename: myFile,
+      message: `req.params.empId must be a number ${empId}`,
+    });
+    next(err); // Send the error to the next middleware.
+  }
+});
+
 
 //export the router.
 module.exports = router;

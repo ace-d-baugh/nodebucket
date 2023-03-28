@@ -1,3 +1,12 @@
+/*
+============================================
+; Title: login.component.ts
+; Author: Ace Baugh
+; Date: March 26, 2023
+; Description: this component is for the login page
+============================================
+*/
+
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';

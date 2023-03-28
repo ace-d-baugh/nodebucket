@@ -1,13 +1,22 @@
+/*
+============================================
+; Title: index.js
+; Author: Ace Baugh
+; Date: March 26, 2023
+; Description: this is the index.js file
+============================================
+*/
+
 /**
  * Require statements
  */
-const express = require('express');
-const path = require('path');
-const mongoose = require('mongoose');
-const createError = require('http-errors')
-const EmployeeRoute = require('./routes/employee-route')
-const swaggerUi = require('swagger-ui-express');
-const swaggerJsdoc = require('swagger-jsdoc');
+const express = require("express");
+const path = require("path");
+const mongoose = require("mongoose");
+const createError = require("http-errors");
+const EmployeeRoute = require("./routes/employee-route");
+const swaggerUi = require("swagger-ui-express");
+const swaggerJsdoc = require("swagger-jsdoc");
 
 const app = express(); // Express variable.
 
@@ -15,9 +24,9 @@ const app = express(); // Express variable.
  * App configurations.
  */
 app.use(express.json());
-app.use(express.urlencoded({'extended': true}));
-app.use(express.static(path.join(__dirname, '../dist/nodebucket')));
-app.use('/', express.static(path.join(__dirname, '../dist/nodebucket')));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "../dist/nodebucket")));
+app.use("/", express.static(path.join(__dirname, "../dist/nodebucket")));
 
 // default server port value.
 const PORT = process.env.PORT || 3000;
@@ -29,11 +38,14 @@ const CONN =
 /**
  * Database connection.
  */
-mongoose.connect(CONN).then(() => {
-  console.log('Connection to the database was successful');
-}).catch(err => {
-  console.log('MongoDB Error: ' + err.message);
-});
+mongoose
+  .connect(CONN)
+  .then(() => {
+    console.log("Connection to the database was successful");
+  })
+  .catch((err) => {
+    console.log("MongoDB Error: " + err.message);
+  });
 
 // Swagger API documentation options.
 const options = {
@@ -51,10 +63,10 @@ const options = {
 const openapiSpecification = swaggerJsdoc(options);
 
 // Swagger UI
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(openapiSpecification));
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(openapiSpecification));
 
 // Routes
-app.use('/api/employees', EmployeeRoute);
+app.use("/api/employees", EmployeeRoute);
 
 // Root request.
 app.get("/", (req, res) => {
@@ -62,12 +74,12 @@ app.get("/", (req, res) => {
 });
 
 // Error handling for 404 errors.
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
-})
+});
 
 // Error handling for any other kind of error.
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   res.status(err.status || 500);
 
   // Send the error to the client.
@@ -75,11 +87,11 @@ app.use(function(err, req, res, next) {
     type: "error",
     status: err.status,
     message: err.message,
-    stack: req.app.get('env') === 'development' ? err.stack : undefined
+    stack: req.app.get("env") === "development" ? err.stack : undefined,
   });
-})
+});
 
 // Wire-up the Express server.
 app.listen(PORT, () => {
-  console.log('Application started and listening on PORT: ' + PORT);
-})
+  console.log("Application started and listening on PORT: " + PORT);
+});

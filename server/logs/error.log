@@ -34,3 +34,8 @@
 [3/27/2023, 11:48:30 PM] server	 employee-route.js - Error: Bad Request
 [3/27/2023, 11:48:53 PM] server	 employee-route.js - Error: Bad Request
 [3/28/2023, 12:14:12 AM] server	 employee-route.js - NotFoundError: Not Found
+[3/28/2023, 10:40:12 AM] server	 employee-route.js - NotFoundError: Not Found
+[3/28/2023, 10:43:04 AM] server	 employee-route.js - empId is not a number: apes
+[3/28/2023, 10:46:44 AM] server	 employee-route.js - NotFoundError: Not Found
+[3/28/2023, 10:47:55 AM] server	 employee-route.js - Error: Bad Request
+[3/28/2023, 11:14:12 AM] server	 employee-route.js - Error: Bad Request
