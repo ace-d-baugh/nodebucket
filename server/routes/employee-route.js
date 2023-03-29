@@ -145,31 +145,49 @@ router.get("/:empId/tasks", async (req, res, next) => {
   let empId = req.params.empId;
   const err = checkNum(empId);
 
+  // If the employee id is a number.
   if (err === false) {
     try {
+      // Find the employee by id.
       const emp = await Employee.findOne({ empId: empId }, "empId todo done");
 
+      // If the employee is found.
       if (emp) {
+        // Log the employee to the console.
         console.log(emp);
+        // Update the debug log.
         debugLogger({ filename: myFile, message: emp });
+        // Send the employee to the client.
         res.send(emp);
+        // If the employee is not found.
       } else {
+        // Log the error to the console.
         console.error(createError(404));
+        // Update the error log.
         errorLogger({ filename: myFile, message: createError(404) });
+        // Send the error to the next middleware.
         next(createError(404));
       }
+      // Catch any errors.
     } catch (err) {
+      // Log the error to the error log.
       errorLogger({ filename: myFile, message: err });
-      next(err); // Send the error to the next middleware.
+      // Send the error to the next middleware.
+      next(err);
     }
+    // If the employee id is not a number.
   } else {
+    // create error string for logging
     const errorString = `empId is not a number: ${empId}`;
+    // Log the error to the console.
     console.error(errorString);
+    // Update the error log.
     errorLogger({
       filename: myFile,
       message: errorString,
     });
-    next(err); // Send the error to the next middleware.
+    // Send the error to the next middleware.
+    next(err);
   }
 });
 
@@ -214,48 +232,74 @@ router.post("/:empId/tasks", async (req, res, next) => {
   // Get the employee id from the request.
   let empId = req.params.empId;
 
+  // Check if the employee Id is a number.
   const err = checkNum(empId);
 
+  // If the employee id is a number.
   if (err === false) {
     try {
+      // Find the employee by id.
       let emp = await Employee.findOne({ empId: empId });
 
+      // If the employee is found.
       if (emp) {
+        // store the new task in a variable
         const newTask = req.body;
+        // Validate the new task against the taskSchema
         const validator = ajv.compile(taskSchema);
+        // If the new task is valid.
         const valid = validator(newTask);
 
+        // If the new task is not valid.
         if (!valid) {
+          // Store the error message
           const err = Error("Bad Request");
+          // Set the status code
           err.status = 400;
+          // Log the error to the console.
           console.error(
             "Bad Request. Unable to validate req.body against defined schema"
           );
+          // Update the error log.
           errorLogger({ filename: myFile, message: err });
-          next(err); // Send the error to the next middleware.
+          // Send the error to the next middleware.
+          next(err);
         } else {
+          // Add the new task to the employee's todo array.
           emp.todo.push(newTask);
+          // Save the employee to the database.
           const result = await emp.save();
+          // Log the result to the console.
           console.log(result);
+          // Update the debug log.
           debugLogger({ filename: myFile, message: result });
+          // Send the new task to the client.
           res.status(204).send(newTask);
         }
       } else {
+        // Log the error to the console.
         console.log("empId is a number, but not an employee");
+        // Log the error to the console.
         console.error(createError(404));
+        // Update the error log.
         errorLogger({ filename: myFile, message: createError(404) });
+        // Send the error to the next middleware.
         next(createError(404));
       }
     } catch (err) {
+      // Send the error to the next middleware.
       next(err);
     }
   } else {
+    // Log the error to the console.
     console.error("req.params.empId must be a number. unlike: ", empId);
+    // Update the error log.
     errorLogger({
       filename: myFile,
       message: `req.params.empId must be a number ${empId}`,
     });
-    next(err); // Send the error to the next middleware.
+    // Send the error to the next middleware.
+    next(err);
   }
 });
 

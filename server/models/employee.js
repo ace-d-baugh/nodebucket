@@ -14,6 +14,7 @@ const itemSchema = require("./item");
 // Define the employee schema
 let employeeSchema = new Schema(
   {
+    // Define the fields
     empId: { type: Number, unique: true, required: true },
     firstName: { type: String },
     lastName: { type: String },
@@ -21,6 +22,7 @@ let employeeSchema = new Schema(
     //doing: [itemSchema],
     done: [itemSchema],
   },
+  // Define the collection
   { collection: "employees" }
 );
 
