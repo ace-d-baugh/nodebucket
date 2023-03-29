@@ -181,10 +181,6 @@
     {
       text: 'go to bed',
       _id: new ObjectId("642246b907c7c76bf07b99c7")
-    },
-    {
-      text: 'make love to wife',
-      _id: new ObjectId("642267889224e43121903778")
     }
   ]
 }
@@ -196,10 +192,6 @@
     {
       text: 'go to bed',
       _id: new ObjectId("642246b907c7c76bf07b99c7")
-    },
-    {
-      text: 'make love to wife',
-      _id: new ObjectId("642267889224e43121903778")
     }
   ]
 }
