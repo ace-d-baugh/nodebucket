@@ -2,7 +2,7 @@
 ============================================
 ; Title: contact.component.css
 ; Author: Ace Baugh
-; Date: March 26, 2023
+; Date: March 29, 2023
 ; Description: this is the contact component css file
 ============================================
 */
@@ -61,7 +61,6 @@
   color: var(--primary) !important;
 }
 
-
 a {
   color: var(--primary);
   text-decoration: none;
@@ -73,7 +72,7 @@ a:hover {
 }
 
 .contact-text {
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: 700;
   color: var(--primary) !important;
 }

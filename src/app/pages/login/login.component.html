@@ -2,7 +2,7 @@
   ==========================================================
   Title: login.component.html
   Author: Ace Baugh
-  Date: March 26, 2023
+  Date: March 29, 2023
   Description: Login component
   ==========================================================
 -->
@@ -18,7 +18,11 @@
     </div>
 
     <div class="sign-in-container">
-      <form [formGroup]="loginForm" (ngSubmit)="login(); loginForm.reset()" class="sign-in-form">
+      <form
+        [formGroup]="loginForm"
+        (ngSubmit)="login(); loginForm.reset()"
+        class="sign-in-form"
+      >
         <div class="form-group">
           <p-messages
             [value]="errorMessage"

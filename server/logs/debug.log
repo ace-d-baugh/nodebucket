@@ -312,3 +312,81 @@
   todo: [],
   done: []
 }
+[3/29/2023, 8:17:18 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903e9b9a84caff39b134e"),
+  empId: 1009,
+  firstName: 'David',
+  lastName: 'Gahan',
+  __v: 3,
+  done: [],
+  todo: [
+    {
+      text: 'Eat a banana',
+      _id: new ObjectId("642301b7f6cb8ab1597c0475")
+    },
+    {
+      text: 'Take out the trash',
+      _id: new ObjectId("6423040d57d521c4eb78b74e")
+    },
+    {
+      text: 'Look up creative art',
+      _id: new ObjectId("6424d50eb37ac7b5e2b46c3f")
+    }
+  ]
+}
+[3/29/2023, 8:21:39 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903e9b9a84caff39b134e"),
+  empId: 1009,
+  firstName: 'David',
+  lastName: 'Gahan',
+  __v: 4,
+  done: [],
+  todo: [
+    {
+      text: 'Eat a banana',
+      _id: new ObjectId("642301b7f6cb8ab1597c0475")
+    },
+    {
+      text: 'Take out the trash',
+      _id: new ObjectId("6423040d57d521c4eb78b74e")
+    },
+    {
+      text: 'Look up creative art',
+      _id: new ObjectId("6424d50eb37ac7b5e2b46c3f")
+    },
+    {
+      text: 'Look here',
+      _id: new ObjectId("6424d6130a2a80aa268f0fc5")
+    }
+  ]
+}
+[3/29/2023, 8:26:28 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903e9b9a84caff39b134e"),
+  empId: 1009,
+  firstName: 'David',
+  lastName: 'Gahan',
+  __v: 5,
+  done: [],
+  todo: [
+    {
+      text: 'Eat a banana',
+      _id: new ObjectId("642301b7f6cb8ab1597c0475")
+    },
+    {
+      text: 'Take out the trash',
+      _id: new ObjectId("6423040d57d521c4eb78b74e")
+    },
+    {
+      text: 'Look up creative art',
+      _id: new ObjectId("6424d50eb37ac7b5e2b46c3f")
+    },
+    {
+      text: 'Look here',
+      _id: new ObjectId("6424d6130a2a80aa268f0fc5")
+    },
+    {
+      text: 'Look here now',
+      _id: new ObjectId("6424d73472cf1d116a3dd27f")
+    }
+  ]
+}

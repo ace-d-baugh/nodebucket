@@ -2,7 +2,7 @@
 ============================================
 ; Title: login.component.css
 ; Author: Ace Baugh
-; Date: March 26, 2023
+; Date: March 29, 2023
 ; Description: This is the login component css file
 ============================================
 */
@@ -75,30 +75,34 @@ mat-card-actions {
 }
 
 .mat-raised-button {
-    box-sizing: border-box;
-    position: relative;
-    -webkit-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    display: inline-block;
-    white-space: nowrap;
-    text-decoration: none;
-    vertical-align: baseline;
-    text-align: center;
-    margin: 0;
-    min-width: 64px;
-    max-width: 30%;
-    padding: 0 16px;
-    border-radius: 10px;
-    overflow: visible;
-    transform: translate3d(0, 0, 0);
-    transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
+  position: relative;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  margin: 0;
+  min-width: 64px;
+  max-width: 30%;
+  padding: 0 16px;
+  border-radius: 10px;
+  overflow: visible;
+  transform: translate3d(0, 0, 0);
+  transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
-    background-color: var(--accent) !important;
-    color: var(--primary) !important;
-    border: 2px solid var(--secondary) !important;
+.mat-flat-button.mat-primary,
+.mat-raised-button.mat-primary,
+.mat-fab.mat-primary,
+.mat-mini-fab.mat-primary {
+  background-color: var(--accent) !important;
+  color: var(--primary) !important;
+  border: 2px solid var(--secondary) !important;
 }
 
 .mat-raised-button.mat-button-disabled {

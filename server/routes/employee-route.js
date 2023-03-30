@@ -2,7 +2,7 @@
 ============================================
 ; Title: employee-route.js
 ; Author: Ace Baugh
-; Date: March 26, 2023
+; Date: March 29, 2023
 ; Description: Employee route file
 ============================================
 */
@@ -13,6 +13,7 @@ const Employee = require("../models/employee");
 const { debugLogger, errorLogger } = require("../logs/logger");
 const createError = require("http-errors");
 const Ajv = require("ajv");
+const BaseResponse = require("../models/base-response");
 
 // Create the router.
 const router = express.Router();
@@ -273,8 +274,12 @@ router.post("/:empId/tasks", async (req, res, next) => {
           console.log(result);
           // Update the debug log.
           debugLogger({ filename: myFile, message: result });
-          // Send the new task to the client.
-          res.status(204).send(newTask);
+          // Store the new task Id in a variable.
+          const task = result.todo.pop();
+          // Create a new BaseResponse object.
+          const newTaskResponse = new BaseResponse(201, "Task item added successfully", {id: task._id});
+          // Send the new taskResponse to the client.
+          res.status(201).send(newTaskResponse);
         }
       } else {
         // Log the error to the console.
@@ -345,7 +350,6 @@ router.delete("/:empId/tasks/:taskId", async (req, res, next) => {
 
   if (err === false) {
     try {
-
     } catch (err) {
       next(err);
     }
@@ -358,7 +362,6 @@ router.delete("/:empId/tasks/:taskId", async (req, res, next) => {
     next(err); // Send the error to the next middleware.
   }
 });
-
 
 //export the router.
 module.exports = router;

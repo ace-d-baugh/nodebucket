@@ -2,7 +2,7 @@
   ==========================================================
   Title: base-layout.component.html
   Author: Ace Baugh
-  Date: March 26, 2023
+  Date: March 29, 2023
   Description: Base layout component
   ==========================================================
 -->
@@ -23,10 +23,14 @@
         <button class="navbar-link" routerLink="/" mat-button>Home</button>
       </div>
       <div class="navbar-link-container">
-        <button class="navbar-link" routerLink="/about" mat-button>About</button>
+        <button class="navbar-link" routerLink="/about" mat-button>
+          About
+        </button>
       </div>
       <div class="navbar-link-container">
-        <button class="navbar-link" routerLink="/contact" mat-button>Contact</button>
+        <button class="navbar-link" routerLink="/contact" mat-button>
+          Contact
+        </button>
       </div>
     </div>
 
@@ -41,17 +45,17 @@
 
       <mat-menu #profileMenu="matMenu">
         <div *ngIf="sessionName">
-        <p class="signed-in-as">Signed in as {{ sessionName }}</p>
-        <button mat-menu-item (click)="logout()">
-          <mat-icon>logout</mat-icon>
-          <span>Logout</span>
-        </button>
+          <p class="signed-in-as">Signed in as {{ sessionName }}</p>
+          <button mat-menu-item (click)="logout()">
+            <mat-icon>logout</mat-icon>
+            <span>Logout</span>
+          </button>
         </div>
         <div *ngIf="!sessionName">
-        <button mat-menu-item routerLink="/">
-          <mat-icon>login</mat-icon>
-          <span>Login</span>
-        </button>
+          <button mat-menu-item routerLink="/">
+            <mat-icon>login</mat-icon>
+            <span>Login</span>
+          </button>
         </div>
       </mat-menu>
     </div>

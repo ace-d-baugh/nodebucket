@@ -2,7 +2,7 @@
 ============================================
 ; Title: home.component.css
 ; Author: Ace Baugh
-; Date: March 26, 2023
+; Date: March 29, 2023
 ; Description: Home component styles
 ============================================
 */
@@ -126,7 +126,8 @@ form {
   background-color: var(--secondary);
 }
 
-.tasks-counter-title, .tasks-counter-count {
+.tasks-counter-title,
+.tasks-counter-count {
   color: var(--gray);
   font-size: 1rem;
   font-weight: 700;
@@ -153,7 +154,8 @@ form {
   padding: 0 5px;
 }
 
-.task-item-title, .task-move {
+.task-item-title,
+.task-move {
   text-align: left;
   color: var(--secondary);
   padding: 5px;

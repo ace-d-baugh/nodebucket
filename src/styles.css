@@ -2,7 +2,7 @@
 ============================================
 ; Title: styles.css
 ; Author: Ace Baugh
-; Date: March 26, 2023
+; Date: March 29, 2023
 ; Description: Styles for the app
 ============================================
 */
@@ -149,7 +149,6 @@ p-messages {
   color: var(--gray) !important;
 }
 
-
 .p-1 {
   padding: 1rem;
 }
@@ -173,4 +172,3 @@ p-messages {
 .default-text {
   color: var(--primary);
 }
-

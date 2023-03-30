@@ -2,7 +2,7 @@
 ============================================
 ; Title: base-layout.component.css
 ; Author: Ace Baugh
-; Date: March 26, 2023
+; Date: March 29, 2023
 ; Description: Base layout component styles
 ============================================
 */
@@ -15,8 +15,7 @@
 
 .navbar {
   background-color: var(--primary-transparent);
-  box-shadow: 0 0 2px var(--gray),
-              0 0 20px 20px var(--secondary);
+  box-shadow: 0 0 2px var(--gray), 0 0 20px 20px var(--secondary);
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -69,9 +68,7 @@
   bottom: 0;
   position: absolute;
   width: 100%;
-  box-shadow: 0 0 2px var(--gray),
-              0 0 20px 20px var(--secondary);
-
+  box-shadow: 0 0 2px var(--gray), 0 0 20px 20px var(--secondary);
 }
 
 .footer-content {
