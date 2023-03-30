@@ -30,7 +30,7 @@
   padding: 0 40px;
 }
 
-.task-create-container {
+.create-task-container {
   display: flex;
   width: 100%;
   height: 100px;
@@ -41,6 +41,7 @@
   margin: 20px 0;
   border: 2px solid var(--accent);
   position: relative;
+  box-shadow: 3px 3px 3px var(--secondary-transparent);
 }
 
 form {
@@ -52,7 +53,7 @@ form {
   flex-direction: column;
 }
 
-.task-input-container {
+.create-task-input-container {
   position: relative;
   width: 100%;
   height: 100%;
@@ -62,7 +63,7 @@ form {
   flex-direction: column;
 }
 
-.task-input {
+.create-task-input {
   width: 100%;
   height: 50px;
   border: 2px solid var(--primary);
@@ -75,43 +76,53 @@ form {
   padding: 0 10px;
 }
 
-.task-input:focus {
+.create-task-input:focus {
   outline: none;
   border: 2px solid var(--accent);
 }
 
-.task-input::placeholder {
-  color: var(--primary);
+.create-task-input::placeholder {
+  color: var(--primary-transparent);
 }
 
-.task-input-button {
+.create-task-input-button {
   position: absolute;
   right: 15px;
 }
 
-button:disabled {
-  background-color: var(--gray) !important;
-  color: var(--accent) !important;
-  border: 3px solid var(--accent) !important;
-  border-radius: 50%;
-  padding: 5px;
-  font-weight: 700;
+.create-button:disabled {
+  border: 2px solid var(--primary-transparent);
+  background-color: var(--gray);
   cursor: default;
+  box-shadow: none;
 }
 
-button {
-  background-color: var(--secondary) !important;
-  color: var(--accent) !important;
-  border: 3px solid var(--accent) !important;
+.create-button {
+  margin: 0;
+  padding: 0;
   border-radius: 50%;
-  padding: 5px;
-  font-weight: 700;
+  border: 2px solid var(--accent);
+  width: 35px;
+  height: 35px;
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-  width: 40px;
-  aspect-ratio: 1 / 1;
+  box-shadow: 2px 2px 2px var(--secondary-transparent);
 }
 
-.pi-plus
+.create-plus {
+  color: var(--accent);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: -5px;
+  padding: 0;
+  text-shadow: 0 1px var(--accent),
+               0 -1px var(--accent),
+               -1px 0 var(--accent),
+               1px 0 var(--accent);
+}
 
 .error-message {
   background-color: var(--warn);
@@ -145,14 +156,16 @@ button {
   color: var(--accent);
   font-size: 1.5rem;
   font-weight: 700;
+  margin-left: 10px;
 }
 
 .tasks-container {
   background-color: var(--gray);
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 10px 0;
   border: 2px solid var(--accent);
   overflow: hidden;
+  box-shadow: 3px 3px 3px var(--secondary-transparent);
 }
 
 .tasks-counter {
@@ -223,4 +236,6 @@ button {
   border-radius: 5px;
   margin: 5px 0;
   border: 2px dashed var(--secondary);
+  justify-content: center;
+  align-items: center;
 }
