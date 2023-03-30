@@ -30,6 +30,19 @@ const routes: Routes = [
         component: HomeComponent,
         canActivate: [AuthGuard],
       },
+      {
+        path: 'home',
+        component: HomeComponent,
+        canActivate: [AuthGuard],
+      },
+      {
+        path: 'about',
+        component: AboutComponent,
+      },
+      {
+        path: 'contact',
+        component: ContactComponent,
+      },
     ],
   },
   // a route for the login page
@@ -40,28 +53,6 @@ const routes: Routes = [
       {
         path: 'login',
         component: LoginComponent,
-      },
-    ],
-  },
-  // a route for the about page
-  {
-    path: 'about',
-    component: BaseLayoutComponent,
-    children: [
-      {
-        path: '',
-        component: AboutComponent,
-      },
-    ],
-  },
-  // a route for the contact page
-  {
-    path: 'contact',
-    component: BaseLayoutComponent,
-    children: [
-      {
-        path: '',
-        component: ContactComponent,
       },
     ],
   },

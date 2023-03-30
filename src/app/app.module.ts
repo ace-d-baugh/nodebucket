@@ -38,6 +38,8 @@ import { MatDividerModule } from '@angular/material/divider';
 // PrimeNG
 import { MessageModule } from 'primeng/message';
 import { MessagesModule } from 'primeng/messages';
+import { ToastModule } from 'primeng/toast';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
 
 @NgModule({
   declarations: [
@@ -68,6 +70,8 @@ import { MessagesModule } from 'primeng/messages';
     FormsModule,
     ReactiveFormsModule,
     MatMenuModule,
+    ToastModule,
+    ConfirmDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
