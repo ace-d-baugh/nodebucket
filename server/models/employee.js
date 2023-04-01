@@ -19,7 +19,7 @@ let employeeSchema = new Schema(
     firstName: { type: String },
     lastName: { type: String },
     todo: [itemSchema],
-    //doing: [itemSchema],
+    doing: [itemSchema],
     done: [itemSchema],
   },
   // Define the collection

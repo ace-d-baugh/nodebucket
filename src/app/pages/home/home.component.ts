@@ -77,8 +77,10 @@ export class HomeComponent implements OnInit {
         //this.doing = this.employee.doing;
         this.done = this.employee.done;
 
-        console.log('--ToDo and Done Data--');
+        console.log('--ToDo, Doing, and Done Data--');
         console.log(this.todo);
+        console.log(this.done);
+        //console.log(this.doing);
       },
     });
   }

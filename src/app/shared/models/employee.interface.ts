@@ -13,5 +13,6 @@ export interface Employee {
   firstName: string;
   lastName: string;
   todo: Item[];
+  doing: Item[];
   done: Item[];
 }

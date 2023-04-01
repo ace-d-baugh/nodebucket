@@ -65,11 +65,11 @@
         <div class="tasks-header">ToDo</div>
         <div class="tasks-container">
           <div class="tasks-counter">
-            <div class="tasks-counter-title">ToDo Items:</div>
+            <div class="tasks-counter-title">ToDo Tasks:</div>
             <div class="tasks-counter-count">{{ todo.length }}</div>
           </div>
           <!-- If no tasks, place empty task holder-->
-          <div *ngIf="todo.length == 0; else elseBlock" class="tasks-list">
+          <div *ngIf="todo.length === 0; else elseBlock" class="tasks-list">
             <div class="empty-spot">No Tasks</div>
           </div>
           <ng-template #elseBlock>
@@ -86,21 +86,21 @@
         </div>
       </div>
 
-      <!-- Doing Tasks
-      <div class="tasks">
+      <!-- Doing Tasks -->
+      <!-- <div class="tasks">
         <div class="tasks-header">Doing</div>
         <div class="tasks-container">
           <div class="tasks-counter">
             <div class="tasks-counter-title">Doing Tasks:</div>
-            <div class="tasks-counter-count">1</div>
-          </div> -->
-          <!-- If no tasks, place empty task holder
-          <div *ngIf="done.length == 0; else elseBlock" class="tasks-list">
+            <div class="tasks-counter-count">{{doing.length}}</div>
+          </div>
+          <!-- If no tasks, place empty task holder 
+          <div *ngIf="doing.length === 0; else elseBlock" class="tasks-list">
             <div class="empty-spot">No Tasks</div>
           </div>
-          <ng-template #elseBlock>-->
-            <!-- Loop of Done Tasks
-            <div class="tasks-list" *ngFor="let task of done"> -->
+          <ng-template #elseBlock>
+            <!-- Loop of Doing Tasks
+            <div class="tasks-list" *ngFor="let task of doing">
               <!-- If tasks, place the list of tasks
               <div class="task-item">
                 <i class="pi pi-bars task-move"></i>
@@ -117,11 +117,11 @@
         <div class="tasks-header">Done</div>
         <div class="tasks-container">
           <div class="tasks-counter">
-            <div class="tasks-counter-title">Done Items:</div>
+            <div class="tasks-counter-title">Done Tasks:</div>
             <div class="tasks-counter-count">{{ done.length }}</div>
           </div>
           <!-- If no tasks, place empty task holder-->
-          <div *ngIf="done.length == 0; else elseBlock" class="tasks-list">
+          <div *ngIf="done.length === 0; else elseBlock" class="tasks-list">
             <div class="empty-spot">No Tasks</div>
           </div>
           <ng-template #elseBlock>
