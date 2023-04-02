@@ -2,7 +2,7 @@
 ============================================
 ; Title: home.component.ts
 ; Author: Ace Baugh
-; Date: March 29, 2023
+; Date: April 2, 2023
 ; Description: this component is the home component
 ============================================
 */
@@ -21,6 +21,7 @@ import { Item } from 'src/app/shared/models/item.interface';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
+// Home component class
 export class HomeComponent implements OnInit {
   serverMessages: Message[] = [];
   employee: Employee;
@@ -43,11 +44,13 @@ export class HomeComponent implements OnInit {
     ],
   });
 
+  // Constructor for the home component
   constructor(
     private taskService: TaskService,
     private cookieService: CookieService,
     private fb: FormBuilder
   ) {
+    // variables
     this.empId = parseInt(this.cookieService.get('session_user'), 10);
     this.employee = {} as Employee;
     this.todo = [];
@@ -56,12 +59,15 @@ export class HomeComponent implements OnInit {
     this.newTaskId = '';
     this.newTaskMessage = '';
 
+    // fina all tasks
     this.taskService.findAllTasks(this.empId).subscribe({
       next: (res) => {
+        // console.log the employee data
         this.employee = res;
         console.log('--Employee Data--');
         console.log(this.employee);
       },
+      // error message
       error: (err) => {
         console.error(err.message);
         this.serverMessages = [
@@ -72,11 +78,13 @@ export class HomeComponent implements OnInit {
           },
         ];
       },
+      // once complete set the todo, doing, and done data
       complete: () => {
         this.todo = this.employee.todo;
         //this.doing = this.employee.doing;
         this.done = this.employee.done;
 
+        // console.log the todo, doing, and done data
         console.log('--ToDo, Doing, and Done Data--');
         console.log(this.todo);
         console.log(this.done);
@@ -89,8 +97,10 @@ export class HomeComponent implements OnInit {
 
   // Create a new task
   createTask() {
+    // save the task form value
     const newTask = this.taskForm.controls['task'].value;
 
+    // create the task
     this.taskService.createTask(this.empId, newTask).subscribe({
       next: (res) => {
         this.newTaskId = res.data.id;
@@ -108,6 +118,7 @@ export class HomeComponent implements OnInit {
           },
         ];
       },
+      // once complete push the new task to the todo array
       complete: () => {
         let task = {
           _id: this.newTaskId,
@@ -117,6 +128,7 @@ export class HomeComponent implements OnInit {
         this.newTaskId = '';
         this.taskForm.controls['task'].setErrors({ incorrect: false });
 
+        // console.log the todo array
         this.serverMessages = [
           {
             severity: 'success',
@@ -127,6 +139,4 @@ export class HomeComponent implements OnInit {
       },
     });
   }
-
 }
-

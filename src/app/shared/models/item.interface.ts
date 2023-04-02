@@ -2,7 +2,7 @@
 ============================================
 ; Title: item.interface.ts
 ; Author: Ace Baugh
-; Date: March 29, 2023
+; Date: April 2, 2023
 ; Description: Item interface
 ============================================
 */

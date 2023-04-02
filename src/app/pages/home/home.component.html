@@ -2,7 +2,7 @@
   ==========================================================
   Title: home.component.html
   Author: Ace Baugh
-  Date: March 29, 2023
+  Date: April 2, 2023
   Description: Home component
   ==========================================================
 -->
@@ -25,7 +25,7 @@
   </div>
   <!-- Create Items for ToDo List -->
   <div class="create-task-container">
-    <form [formGroup]="taskForm" (ngSubmit)="createTask(); taskForm.reset();">
+    <form [formGroup]="taskForm" (ngSubmit)="createTask(); taskForm.reset()">
       <div class="create-task-input-container">
         <input
           formControlName="task"
@@ -34,7 +34,11 @@
         />
         <div class="create-task-input-button">
           <!-- primeng plus icon -->
-          <button type="submit" [disabled]="!taskForm.valid" class="create-button">
+          <button
+            type="submit"
+            [disabled]="!taskForm.valid"
+            class="create-button"
+          >
             <p class="create-plus">+</p>
           </button>
         </div>
@@ -42,16 +46,35 @@
 
       <div class="errors-container">
         <!-- Error Message -->
-        <div *ngIf="taskForm.controls['task'].hasError('required') && taskForm.controls['task'].touched">
+        <div
+          *ngIf="
+            taskForm.controls['task'].hasError('required') &&
+            taskForm.controls['task'].touched
+          "
+        >
           <p class="error-message">Task is a required field</p>
         </div>
 
-        <div *ngIf="taskForm.controls['task'].hasError('minlength') && taskForm.controls['task'].touched">
-          <p class="error-message">The task field must be at least 3 characters in length</p>
+        <div
+          *ngIf="
+            taskForm.controls['task'].hasError('minlength') &&
+            taskForm.controls['task'].touched
+          "
+        >
+          <p class="error-message">
+            The task field must be at least 3 characters in length
+          </p>
         </div>
 
-        <div *ngIf="taskForm.controls['task'].hasError('maxlength') && taskForm.controls['task'].touched">
-          <p class="error-message">The task field must be less than 35 characters in length</p>
+        <div
+          *ngIf="
+            taskForm.controls['task'].hasError('maxlength') &&
+            taskForm.controls['task'].touched
+          "
+        >
+          <p class="error-message">
+            The task field must be less than 35 characters in length
+          </p>
         </div>
       </div>
     </form>

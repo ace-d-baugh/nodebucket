@@ -2,7 +2,7 @@
 ============================================
 ; Title: base-response.js
 ; Author: Ace Baugh
-; Date: March 29, 2023
+; Date: April 2, 2023
 ; Description: Base response model
 ============================================
 */
@@ -19,7 +19,7 @@ class BaseResponse {
       httpCode: this.httpCode,
       message: this.message,
       data: this.data,
-      timestamp: new Date().toLocaleString('en-US'),
+      timestamp: new Date().toLocaleString("en-US"),
     };
   }
 }

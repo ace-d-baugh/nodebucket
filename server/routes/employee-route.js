@@ -2,7 +2,7 @@
 ============================================
 ; Title: employee-route.js
 ; Author: Ace Baugh
-; Date: March 29, 2023
+; Date: April 2, 2023
 ; Description: Employee route file
 ============================================
 */
@@ -277,7 +277,11 @@ router.post("/:empId/tasks", async (req, res, next) => {
           // Store the new task Id in a variable.
           const task = result.todo.pop();
           // Create a new BaseResponse object.
-          const newTaskResponse = new BaseResponse(201, "Task item added successfully", {id: task._id});
+          const newTaskResponse = new BaseResponse(
+            201,
+            "Task item added successfully",
+            { id: task._id }
+          );
           // Send the new taskResponse to the client.
           res.status(201).send(newTaskResponse);
         }

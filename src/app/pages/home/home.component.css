@@ -2,7 +2,7 @@
 ============================================
 ; Title: home.component.css
 ; Author: Ace Baugh
-; Date: March 29, 2023
+; Date: April 2, 2023
 ; Description: Home component styles
 ============================================
 */
@@ -118,10 +118,8 @@ form {
   font-weight: 700;
   margin-top: -5px;
   padding: 0;
-  text-shadow: 0 1px var(--accent),
-               0 -1px var(--accent),
-               -1px 0 var(--accent),
-               1px 0 var(--accent);
+  text-shadow: 0 1px var(--accent), 0 -1px var(--accent), -1px 0 var(--accent),
+    1px 0 var(--accent);
 }
 
 .error-message {
