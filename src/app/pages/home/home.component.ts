@@ -59,7 +59,7 @@ export class HomeComponent implements OnInit {
     this.newTaskId = '';
     this.newTaskMessage = '';
 
-    // fina all tasks
+    // final all tasks
     this.taskService.findAllTasks(this.empId).subscribe({
       next: (res) => {
         // console.log the employee data
