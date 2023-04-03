@@ -150,12 +150,12 @@ router.get("/:empId/tasks", async (req, res, next) => {
   if (err === false) {
     try {
       // Find the employee by id.
-      const emp = await Employee.findOne({ empId: empId }, "empId todo done");
+      const emp = await Employee.findOne({ empId: empId }, "empId todo doing done");
 
       // If the employee is found.
       if (emp) {
         // Log the employee to the console.
-        console.log(emp);
+        console.log('This is amazing: ', emp);
         // Update the debug log.
         debugLogger({ filename: myFile, message: emp });
         // Send the employee to the client.
@@ -316,56 +316,32 @@ router.post("/:empId/tasks", async (req, res, next) => {
 /**
  * deleteTask
  * @openapi
- * /api/employees/{id}/tasks/{taskId}:
- *   delete:
- *     tags:
- *       - Employees
- *     description: API for deleting a task for an employee
- *     summary: deletes a task for an employee
- *     parameters:
- *       - name: id
- *         in: path
- *         required: true
- *         description: Employee ID
- *         schema:
- *           type: integer
- *       - name: taskId
- *         in: path
- *         required: true
- *         description: Task ID
- *         schema:
- *           type: string
- *     responses:
- *       '204':
- *         description: Task deleted
- *       '400':
- *         description: Bad Request
- *       '404':
- *         description: Employee not found
- *       '500':
- *         description: Internal Server Error
+ * /api/employees/{empId}/tasks/{taskId}:
+ * delete:
+      summary: Delete a task item by ID
+      parameters:
+        - name: empId
+          in: path
+          description: Employee ID
+          required: true
+          schema:
+            type: integer
+        - name: taskId
+          in: path
+          description: Task ID
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Task item deleted successfully
+        '400':
+          description: Invalid input or missing fields
+        '404':
+          description: Task item not found
  */
-router.delete("/:empId/tasks/:taskId", async (req, res, next) => {
-  // Get the employee id from the request.
-  let empId = req.params.empId;
-  let taskId = "";
 
-  const err = checkNum(empId);
 
-  if (err === false) {
-    try {
-    } catch (err) {
-      next(err);
-    }
-  } else {
-    console.error("req.params.empId must be a number. unlike: ", empId);
-    errorLogger({
-      filename: myFile,
-      message: `req.params.empId must be a number ${empId}`,
-    });
-    next(err); // Send the error to the next middleware.
-  }
-});
 
 //export the router.
 module.exports = router;

@@ -8,11 +8,13 @@
 */
 
 import { Item } from './item.interface';
+
+// Employee interface
 export interface Employee {
   empId: number;
   firstName: string;
   lastName: string;
   todo: Item[];
-  // doing: Item[];
+  doing: Item[];
   done: Item[];
 }

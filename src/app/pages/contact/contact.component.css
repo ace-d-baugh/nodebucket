@@ -28,7 +28,8 @@
 }
 
 .contact-content {
-  margin-top: 20px;
+  max-width: 1200px;
+  margin: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,9 +42,9 @@
 
 .row {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: start;
+  gap: 1rem;
   height: 100%;
   font-family: var(--font-primary);
   font-weight: 700;
@@ -55,7 +56,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
   font-family: var(--font-primary);
   font-weight: 700;
   color: var(--primary) !important;
@@ -75,4 +75,10 @@ a:hover {
   font-size: 0.75rem;
   font-weight: 700;
   color: var(--primary) !important;
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    flex-wrap: wrap;
+  }
 }

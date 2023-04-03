@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
   serverMessages: Message[] = [];
   employee: Employee;
   todo: Item[];
-  //doing: Item[];
+  doing: Item[];
   done: Item[];
   empId: number;
   newTaskId: string;
@@ -54,7 +54,7 @@ export class HomeComponent implements OnInit {
     this.empId = parseInt(this.cookieService.get('session_user'), 10);
     this.employee = {} as Employee;
     this.todo = [];
-    //this.doing = [];
+    this.doing = [];
     this.done = [];
     this.newTaskId = '';
     this.newTaskMessage = '';
@@ -64,6 +64,7 @@ export class HomeComponent implements OnInit {
       next: (res) => {
         // console.log the employee data
         this.employee = res;
+        console.log(res);
         console.log('--Employee Data--');
         console.log(this.employee);
       },
@@ -81,14 +82,14 @@ export class HomeComponent implements OnInit {
       // once complete set the todo, doing, and done data
       complete: () => {
         this.todo = this.employee.todo;
-        //this.doing = this.employee.doing;
+        this.doing = this.employee.doing;
         this.done = this.employee.done;
 
         // console.log the todo, doing, and done data
         console.log('--ToDo, Doing, and Done Data--');
         console.log(this.todo);
         console.log(this.done);
-        //console.log(this.doing);
+        console.log(this.doing);
       },
     });
   }
@@ -139,4 +140,25 @@ export class HomeComponent implements OnInit {
       },
     });
   }
+
+  // Delete a task
+  deleteTask(taskId: string) {
+    // delete the task
+    this.taskService.deleteTask(this.empId, taskId).subscribe({
+      next: (res) => {
+        console.log(res);
+      },
+      error: (err) => {
+        console.error(err.message);
+        this.serverMessages = [
+          {
+            severity: 'error',
+            summary: 'Error',
+            detail: err.message,
+          },
+        ];
+      },
+    });
+  }
+
 }
