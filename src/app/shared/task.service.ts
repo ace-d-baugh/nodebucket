@@ -17,17 +17,16 @@ import { Observable } from 'rxjs';
 export class TaskService {
   constructor(private http: HttpClient) {}
 
+  // Get all tasks for an employee
   findAllTasks(empId: number): Observable<any> {
     return this.http.get(`/api/employees/${empId}/tasks`);
   }
 
+  // Create a new task for an employee
   createTask(empId: number, task: string): Observable<any> {
     return this.http.post(`/api/employees/${empId}/tasks`, {
       text: task,
     });
   }
 
-  deleteTask(empId: number, taskId: string): Observable<any> {
-    return this.http.delete(`/api/employees/${empId}/tasks/${taskId}`);
-  }
 }

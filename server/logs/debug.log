@@ -19229,3 +19229,245 @@
     { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
   ]
 }
+[4/3/2023, 9:20:27 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  firstName: 'Adam',
+  lastName: 'Young',
+  __v: 8,
+  done: [],
+  todo: [
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642246b907c7c76bf07b99c7")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642589959b772c941732cea1")
+    },
+    {
+      text: 'Something to todo',
+      _id: new ObjectId("64259f3f7e7a35019bb6e810")
+    },
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("64299de31e36d007affa7917")
+    }
+  ],
+  doing: []
+}
+[4/3/2023, 9:39:51 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  firstName: 'Adam',
+  lastName: 'Young',
+  __v: 9,
+  done: [],
+  todo: [
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642246b907c7c76bf07b99c7")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642589959b772c941732cea1")
+    },
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("64299de31e36d007affa7917")
+    }
+  ],
+  doing: []
+}
+[4/3/2023, 9:40:03 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [],
+  todo: [
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642246b907c7c76bf07b99c7")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642589959b772c941732cea1")
+    },
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("64299de31e36d007affa7917")
+    }
+  ],
+  doing: []
+}
+[4/3/2023, 10:13:48 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [],
+  todo: [
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642246b907c7c76bf07b99c7")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642589959b772c941732cea1")
+    },
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("64299de31e36d007affa7917")
+    }
+  ],
+  doing: []
+}
+[4/3/2023, 10:16:49 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [],
+  todo: [
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642246b907c7c76bf07b99c7")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642589959b772c941732cea1")
+    },
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("64299de31e36d007affa7917")
+    }
+  ],
+  doing: []
+}
+[4/3/2023, 10:27:20 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [],
+  todo: [
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642246b907c7c76bf07b99c7")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642589959b772c941732cea1")
+    },
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("64299de31e36d007affa7917")
+    }
+  ],
+  doing: []
+}
+[4/3/2023, 10:27:29 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  firstName: 'Adam',
+  lastName: 'Young',
+  __v: 9,
+  done: [],
+  todo: [
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642246b907c7c76bf07b99c7")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642589959b772c941732cea1")
+    },
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("64299de31e36d007affa7917")
+    }
+  ],
+  doing: []
+}
+[4/3/2023, 10:29:05 PM] server	 employee-route.js - {
+  empId: 1007,
+  firstName: 'Adam',
+  lastName: 'Young',
+  todo: [],
+  doing: [
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("642b8b716047f89438b3b752")
+    },
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642b8b716047f89438b3b753")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642b8b716047f89438b3b754")
+    }
+  ],
+  done: [],
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  __v: 10
+}
+[4/3/2023, 10:29:14 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [],
+  todo: [],
+  doing: [
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("642b8b716047f89438b3b752")
+    },
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642b8b716047f89438b3b753")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642b8b716047f89438b3b754")
+    }
+  ]
+}
+[4/3/2023, 10:29:52 PM] server	 employee-route.js - {
+  empId: 1007,
+  firstName: 'Adam',
+  lastName: 'Young',
+  todo: [],
+  doing: [
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("642b8ba06047f89438b3b75e")
+    },
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642b8ba06047f89438b3b75f")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642b8ba06047f89438b3b760")
+    }
+  ],
+  done: [],
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  __v: 11
+}
+[4/3/2023, 10:31:22 PM] server	 employee-route.js - {
+  empId: 1007,
+  firstName: 'Adam',
+  lastName: 'Young',
+  todo: [],
+  doing: [
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("642b8bfa6047f89438b3b767")
+    },
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642b8bfa6047f89438b3b768")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642b8bfa6047f89438b3b769")
+    }
+  ],
+  done: [],
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  __v: 12
+}

@@ -22,6 +22,62 @@ const myFile = "employee-route.js";
 // Create the ajv object.
 const ajv = new Ajv();
 
+
+// *** Unneeded code ***
+/*
+const { promisify } = require("util");
+const ac = new AbortController();
+const {signal} = ac;
+
+const timeout = promisify(setTimeout);
+
+setTimeout(() => {
+  ac.abort()
+}, 500);
+
+router.get('/:id/alltasks', async (req, res, next) => {
+  let empId = req.params.id;
+  empId = parseInt(empId);
+
+  if (isNaN(empId)) {
+    const err = new Error("Bad Request");
+    err.status = 400;
+    console.log('isNan error')
+    next(err);
+    return;
+  }
+
+  try {
+
+    const timer = 200;
+    await timeout(timer, 'pausing execution', {signal});
+
+    const emp = await Employee.findOne({'empId': req.params.empId})
+
+    if (!emp) {
+      res.send(createError(404))
+      return;
+    }
+
+    res.send(emp);
+  } catch (err) {
+    if (err.name === 'ABORT_ERR') {
+      console.log('ABORT_ERR')
+      const err = Error('Abort Error')
+      err.status = 500;
+      next(err);
+      return;
+    }
+    console.log('catch Error: ')
+    next(err);
+  }
+});
+
+
+// *** End uneeded code ***
+*/
+
+
 // Function to check if the id is a number.
 const checkNum = (id) => {
   id = parseInt(id, 10);
@@ -47,6 +103,36 @@ const taskSchema = {
   required: ["text"],
   additionalProperties: false,
 };
+
+// Schema for validating the employee tasks array.
+const tasksSchema = {
+  type: "object",
+  required: ["todo", "doing", "done"],
+  additionalProperties: false,
+  properties: {
+    todo: {
+      type: "array",
+      additionalProperties: false,
+      items: taskSchema,
+    },
+    doing: {
+      type: "array",
+      additionalProperties: false,
+      items: taskSchema,
+    },
+    done: {
+      type: "array",
+      additionalProperties: false,
+      items: taskSchema,
+    },
+  },
+};
+
+// Function to get the task from the tasks array.
+function getTask(id, tasks) {
+  const task = tasks.find(item => item._id.toString() === id);
+  return task;
+}
 
 // Swagger written in YAML code to describe the findEmployeeById API
 /**
@@ -312,36 +398,132 @@ router.post("/:empId/tasks", async (req, res, next) => {
   }
 });
 
+// Swagger written in YAML code to describe the updateTask API
+
+router.put("/:empId/tasks", async (req, res, next) => {
+  // Get the employee id from the request.
+  let empId = req.params.empId;
+  // Get the task id from the request.
+  empId = parseInt(empId, 10);
+
+  // Check if the employee Id is a number.
+  if (isNaN(empId)) {
+    const err = Error("input must be a number");
+    err.status = 400;
+    console.error("req.params.empId must be a number. unlike: ", empId);
+    errorLogger({ filename: myFile, message: `input must be a number: ${empId}`});
+    next(err);
+    return
+  }
+
+  // Get the task id from the request.
+  try {
+    let emp = await Employee.findOne({'empId': empId})
+
+    // If the employee is not found.
+    if (!emp) {
+      console.error(createError(404));
+      errorLogger({ filename: myFile, message: createError(404)});
+      next(createError(404));
+      return
+    }
+
+    const tasks = req.body;
+    const validator = ajv.compile(tasksSchema);
+    const valid = validator(tasks);
+
+    // If the tasks are not valid.
+    if (!valid) {
+      const err = Error("Bad Request");
+      err.status = 400;
+      console.error("Bad Request. Unable to validate req.body against defined tasksSchema");
+      errorLogger({
+        filename: myFile,
+        message:
+          "Bad Request. Unable to validate req.body against defined tasksSchema",
+      });
+      next(err);
+      return
+    }
+
+    // Update the employee's tasks
+    emp.set({
+      todo: req.body.todo,
+      doing: req.body.doing,
+      done: req.body.done,
+    });
+
+    // Save the employee to the database.
+    const result = await emp.save();
+    console.log(result);
+    debugLogger({ filename: myFile, message: result });
+    res.status(204).send();
+  } catch (err) {
+    next(err);
+  }
+});
+
 // Swagger written in YAML code to describe the deleteTask API
-/**
- * deleteTask
- * @openapi
- * /api/employees/{empId}/tasks/{taskId}:
- * delete:
-      summary: Delete a task item by ID
-      parameters:
-        - name: empId
-          in: path
-          description: Employee ID
-          required: true
-          schema:
-            type: integer
-        - name: taskId
-          in: path
-          description: Task ID
-          required: true
-          schema:
-            type: integer
-      responses:
-        '200':
-          description: Task item deleted successfully
-        '400':
-          description: Invalid input or missing fields
-        '404':
-          description: Task item not found
- */
+router.delete("/:empId/tasks/:taskId", async (req, res, next) => {
 
+  let taskId = req.params.taskId;
+  let empId = req.params.empId;
+  empId = parseInt(empId, 10);
 
+  // Check if the employee Id is a number.
+  if (isNaN(empId)) {
+    const err = Error("input must be a number");
+    err.status = 400;
+    console.error("req.params.empId must be a number. unlike: ", empId);
+    errorLogger({ filename: myFile, message: `input must be a number: ${empId}`});
+    next(createError(400));
+    return
+  }
+
+  try {
+    let emp = await Employee.findOne({ 'empId': empId });
+
+    // If the employee is not found.
+    if (!emp) {
+      next(createError(404));
+      console.error(createError(404));
+      errorLogger({ filename: myFile, message: createError(404)});
+      next(err);
+      return
+    }
+
+    const todoTask = getTask(taskId, emp.todo);
+    const doingTask = getTask(taskId, emp.doing);
+    const doneTask = getTask(taskId, emp.done);
+
+    if (todoTask !== undefined) {
+      emp.todo.id(todoTask._id).remove();
+    }
+
+    if (doingTask !== undefined) {
+      emp.doing.id(doingTask._id).remove();
+    }
+
+    if (doneTask !== undefined) {
+      emp.done.id(doneTask._id).remove();
+    }
+
+    if (todoTask === undefined && doingTask === undefined && doneTask === undefined) {
+      next(createError(404));
+      console.error('TaskId not found: ', taskId);
+      errorLogger({ filename: myFile, message: `TaskId not found:  ${taskId}`});
+      next(err);
+      return
+    }
+
+    const result = await emp.save();
+    debugLogger({ filename: myFile, message: result });
+    res.status(204).send();
+
+  } catch (err) {
+    next(err);
+  };
+});
 
 //export the router.
 module.exports = router;
