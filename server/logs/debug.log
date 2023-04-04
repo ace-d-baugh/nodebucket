@@ -19471,3 +19471,148 @@
   _id: new ObjectId("641902d2b9a84caff39b134c"),
   __v: 12
 }
+[4/3/2023, 11:02:21 PM] server	 employee-route.js - {
+  empId: 1011,
+  firstName: 'Ashliegh',
+  lastName: 'Ball',
+  todo: [
+    {
+      text: 'Test update',
+      _id: new ObjectId("642b933ddd5658cf2403c0b2")
+    }
+  ],
+  doing: [
+    {
+      text: 'add swagger',
+      _id: new ObjectId("642b933ddd5658cf2403c0b3")
+    }
+  ],
+  done: [
+    {
+      text: "commit tonight's code",
+      _id: new ObjectId("642b933ddd5658cf2403c0b4")
+    }
+  ],
+  _id: new ObjectId("6419044db9a84caff39b1350"),
+  __v: 1
+}
+[4/3/2023, 11:02:51 PM] server	 employee-route.js - {
+  _id: new ObjectId("6419044db9a84caff39b1350"),
+  empId: 1011,
+  doing: [
+    {
+      text: 'add swagger',
+      _id: new ObjectId("642b933ddd5658cf2403c0b3")
+    }
+  ],
+  done: [
+    {
+      text: "commit tonight's code",
+      _id: new ObjectId("642b933ddd5658cf2403c0b4")
+    }
+  ],
+  todo: [
+    {
+      text: 'Test update',
+      _id: new ObjectId("642b933ddd5658cf2403c0b2")
+    }
+  ]
+}
+[4/3/2023, 11:04:30 PM] server	 employee-route.js - {
+  _id: new ObjectId("6419044db9a84caff39b1350"),
+  empId: 1011,
+  firstName: 'Ashliegh',
+  lastName: 'Ball',
+  __v: 2,
+  doing: [],
+  done: [
+    {
+      text: "commit tonight's code",
+      _id: new ObjectId("642b933ddd5658cf2403c0b4")
+    }
+  ],
+  todo: [
+    {
+      text: 'Test update',
+      _id: new ObjectId("642b933ddd5658cf2403c0b2")
+    }
+  ]
+}
+[4/3/2023, 11:05:16 PM] server	 employee-route.js - {
+  _id: new ObjectId("6419044db9a84caff39b1350"),
+  empId: 1011,
+  doing: [],
+  done: [
+    {
+      text: "commit tonight's code",
+      _id: new ObjectId("642b933ddd5658cf2403c0b4")
+    }
+  ],
+  todo: [
+    {
+      text: 'Test update',
+      _id: new ObjectId("642b933ddd5658cf2403c0b2")
+    }
+  ]
+}
+[4/3/2023, 11:10:45 PM] server	 employee-route.js - {
+  _id: new ObjectId("6419044db9a84caff39b1350"),
+  empId: 1011,
+  firstName: 'Ashliegh',
+  lastName: 'Ball',
+  __v: 2,
+  doing: [],
+  done: [
+    {
+      text: "commit tonight's code",
+      _id: new ObjectId("642b933ddd5658cf2403c0b4")
+    }
+  ],
+  todo: [
+    {
+      text: 'Test update',
+      _id: new ObjectId("642b933ddd5658cf2403c0b2")
+    }
+  ]
+}
+[4/3/2023, 11:10:45 PM] server	 employee-route.js - {
+  _id: new ObjectId("6419044db9a84caff39b1350"),
+  empId: 1011,
+  doing: [],
+  done: [
+    {
+      text: "commit tonight's code",
+      _id: new ObjectId("642b933ddd5658cf2403c0b4")
+    }
+  ],
+  todo: [
+    {
+      text: 'Test update',
+      _id: new ObjectId("642b933ddd5658cf2403c0b2")
+    }
+  ]
+}
+[4/3/2023, 11:11:11 PM] server	 employee-route.js - {
+  _id: new ObjectId("6419044db9a84caff39b1350"),
+  empId: 1011,
+  firstName: 'Ashliegh',
+  lastName: 'Ball',
+  __v: 3,
+  doing: [],
+  done: [
+    {
+      text: "commit tonight's code",
+      _id: new ObjectId("642b933ddd5658cf2403c0b4")
+    }
+  ],
+  todo: [
+    {
+      text: 'Test update',
+      _id: new ObjectId("642b933ddd5658cf2403c0b2")
+    },
+    {
+      text: 'Doe this still work?',
+      _id: new ObjectId("642b954fb06a32e871adb9f0")
+    }
+  ]
+}

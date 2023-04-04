@@ -241,7 +241,7 @@ router.get("/:empId/tasks", async (req, res, next) => {
       // If the employee is found.
       if (emp) {
         // Log the employee to the console.
-        console.log('This is amazing: ', emp);
+        console.log('This is the employee data: ', emp);
         // Update the debug log.
         debugLogger({ filename: myFile, message: emp });
         // Send the employee to the client.
@@ -398,7 +398,64 @@ router.post("/:empId/tasks", async (req, res, next) => {
   }
 });
 
-// Swagger written in YAML code to describe the updateTask API
+// Swagger written in YAML code to describe the updateTasks API
+/**
+ * updateTasks
+ * @openapi
+ * /api/employees/{id}/tasks:
+ *   put:
+ *     tags:
+ *       - Employees
+ *     description: API for updating the tasks array for an employee
+ *     summary: updates the tasks array for an employee
+ *     parameters:
+ *       - name: id
+ *         in: path
+ *         required: true
+ *         description: Employee ID
+ *         schema:
+ *           type: integer
+ *     requestBody:
+ *       description: Tasks array for employee
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - todo
+ *               - done
+ *               - doing
+ *             properties:
+ *               todo:
+ *                 type: array
+ *                 items:
+ *                   type: object
+ *                   properties:
+ *                     text:
+ *                       type: string
+ *               done:
+ *                 type: array
+ *                 items:
+ *                   type: object
+ *                   properties:
+ *                     text:
+ *                       type: string
+ *               doing:
+ *                 type: array
+ *                 items:
+ *                   type: object
+ *                   properties:
+ *                     text:
+ *                       type: string
+ *     responses:
+ *       '204':
+ *         description: Tasks updated
+ *       '400':
+ *         description: Bad Request
+ *       '404':
+ *         description: Employee not found
+ */
 
 router.put("/:empId/tasks", async (req, res, next) => {
   // Get the employee id from the request.
@@ -464,6 +521,36 @@ router.put("/:empId/tasks", async (req, res, next) => {
 });
 
 // Swagger written in YAML code to describe the deleteTask API
+/**
+ * deleteTask
+ * @openapi
+ * /api/employees/{id}/tasks/{taskId}:
+ *   delete:
+ *     tags:
+ *       - Employees
+ *     description: API for deleting a task from an employee
+ *     summary: deletes a task from an employee
+ *     parameters:
+ *       - name: id
+ *         in: path
+ *         required: true
+ *         description: The id of the task
+ *         schema:
+ *           type: integer
+ *       - name: taskId
+ *         description: The id of the task
+ *         in: path
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       '204':
+ *         description: Task deleted
+ *       '400':
+ *         description: Bad Request
+ *       '404':
+ *         description: Employee not found
+ */
 router.delete("/:empId/tasks/:taskId", async (req, res, next) => {
 
   let taskId = req.params.taskId;
