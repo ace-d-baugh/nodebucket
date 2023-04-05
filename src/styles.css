@@ -92,6 +92,21 @@ p-messages {
   font-family: var(--font-primary) !important;
 }
 
+.p-message.p-message-success {
+  background: var(--secondary-transparent) !important;
+  border: 1px solid var(--accent) !important;
+  color: var(--gray) !important;
+  box-shadow: 3px 3px 3px var(--secondary-transparent);
+}
+
+.p-message.p-message-success .p-message-close {
+  color: var(--accent) !important;
+}
+
+.p-message.p-message-success .p-message-icon {
+  color: var(--gray) !important;
+}
+
 .mat-form-field {
   font-family: var(--font-primary) !important;
   font-size: inherit;

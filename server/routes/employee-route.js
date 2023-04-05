@@ -465,40 +465,55 @@ router.put("/:empId/tasks", async (req, res, next) => {
 
   // Check if the employee Id is a number.
   if (isNaN(empId)) {
+    // Store the error message
     const err = Error("input must be a number");
+    // Set the status code
     err.status = 400;
+    // Log the error to the console.
     console.error("req.params.empId must be a number. unlike: ", empId);
+    // Update the error log.
     errorLogger({ filename: myFile, message: `input must be a number: ${empId}`});
+    // Send the error to the next middleware.
     next(err);
     return
   }
 
   // Get the task id from the request.
   try {
+    // Find the employee by id.
     let emp = await Employee.findOne({'empId': empId})
 
     // If the employee is not found.
     if (!emp) {
+      // Log the error to the console.
       console.error(createError(404));
+      // Update the error log.
       errorLogger({ filename: myFile, message: createError(404)});
+      // Send the error to the next middleware.
       next(createError(404));
       return
     }
 
+    // Validate the tasks against the tasksSchema
     const tasks = req.body;
     const validator = ajv.compile(tasksSchema);
     const valid = validator(tasks);
 
     // If the tasks are not valid.
     if (!valid) {
+      // Store the error message
       const err = Error("Bad Request");
+      // Set the status code
       err.status = 400;
+      // Log the error to the console.
       console.error("Bad Request. Unable to validate req.body against defined tasksSchema");
+      // Update the error log.
       errorLogger({
         filename: myFile,
         message:
           "Bad Request. Unable to validate req.body against defined tasksSchema",
       });
+      // Send the error to the next middleware.
       next(err);
       return
     }
@@ -512,10 +527,15 @@ router.put("/:empId/tasks", async (req, res, next) => {
 
     // Save the employee to the database.
     const result = await emp.save();
+    // Log the result to the console.
     console.log(result);
+    // Update the debug log.
     debugLogger({ filename: myFile, message: result });
+    // Display the result to the client.
     res.status(204).send();
+    // Catch any errors.
   } catch (err) {
+    // Send the error to the next middleware.
     next(err);
   }
 });
@@ -553,61 +573,93 @@ router.put("/:empId/tasks", async (req, res, next) => {
  */
 router.delete("/:empId/tasks/:taskId", async (req, res, next) => {
 
+  // Get the task id from the request.
   let taskId = req.params.taskId;
+  // Get the employee id from the request.
   let empId = req.params.empId;
+  // Parse the employee id to an integer.
   empId = parseInt(empId, 10);
 
   // Check if the employee Id is a number.
   if (isNaN(empId)) {
+    // Store the error message
     const err = Error("input must be a number");
+    // Set the status code
     err.status = 400;
+    // Log the error to the console.
     console.error("req.params.empId must be a number. unlike: ", empId);
+    // Update the error log.
     errorLogger({ filename: myFile, message: `input must be a number: ${empId}`});
+    // Send the error to the next middleware.
     next(createError(400));
     return
   }
 
   try {
+    // Find the employee by id.
     let emp = await Employee.findOne({ 'empId': empId });
 
     // If the employee is not found.
     if (!emp) {
+      // Send the error to the next middleware.
       next(createError(404));
+      // Log the error to the console.
       console.error(createError(404));
+      // Update the error log.
       errorLogger({ filename: myFile, message: createError(404)});
+      // Send the error back to the next middleware.
       next(err);
       return
     }
 
+    // Find the task in the employee's todo array.
     const todoTask = getTask(taskId, emp.todo);
+    // Find the task in the employee's doing array.
     const doingTask = getTask(taskId, emp.doing);
+    // Find the task in the employee's done array.
     const doneTask = getTask(taskId, emp.done);
 
+    // If the task is found in the todo array.
     if (todoTask !== undefined) {
+      // Remove the task from the todo array.
       emp.todo.id(todoTask._id).remove();
     }
 
+    // If the task is found in the doing array.
     if (doingTask !== undefined) {
+      // Remove the task from the doing array.
       emp.doing.id(doingTask._id).remove();
     }
 
+    // If the task is found in the done array.
     if (doneTask !== undefined) {
+      // Remove the task from the done array.
       emp.done.id(doneTask._id).remove();
     }
 
+    // If the task is not found in any of the arrays.
     if (todoTask === undefined && doingTask === undefined && doneTask === undefined) {
+      // Store the error message
       next(createError(404));
+      // Log the error to the console.
       console.error('TaskId not found: ', taskId);
+      // Update the error log.
       errorLogger({ filename: myFile, message: `TaskId not found:  ${taskId}`});
+      // Send the error to the next middleware.
       next(err);
       return
     }
 
+    // Save the employee to the database.
     const result = await emp.save();
+    // Log the result to the debug log.
     debugLogger({ filename: myFile, message: result });
+    // Display the result to the client.
     res.status(204).send();
 
+    // Catch any errors.
   } catch (err) {
+    // Send the error to the next middleware.
     next(err);
   };
 });

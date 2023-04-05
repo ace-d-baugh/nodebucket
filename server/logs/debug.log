@@ -19616,3 +19616,578 @@
     }
   ]
 }
+[4/3/2023, 11:16:33 PM] server	 employee-route.js - {
+  _id: new ObjectId("6419044db9a84caff39b1350"),
+  empId: 1011,
+  doing: [],
+  done: [
+    {
+      text: "commit tonight's code",
+      _id: new ObjectId("642b933ddd5658cf2403c0b4")
+    }
+  ],
+  todo: [
+    {
+      text: 'Test update',
+      _id: new ObjectId("642b933ddd5658cf2403c0b2")
+    },
+    {
+      text: 'Doe this still work?',
+      _id: new ObjectId("642b954fb06a32e871adb9f0")
+    }
+  ]
+}
+[4/3/2023, 11:16:36 PM] server	 employee-route.js - {
+  _id: new ObjectId("6419044db9a84caff39b1350"),
+  empId: 1011,
+  doing: [],
+  done: [
+    {
+      text: "commit tonight's code",
+      _id: new ObjectId("642b933ddd5658cf2403c0b4")
+    }
+  ],
+  todo: [
+    {
+      text: 'Test update',
+      _id: new ObjectId("642b933ddd5658cf2403c0b2")
+    },
+    {
+      text: 'Doe this still work?',
+      _id: new ObjectId("642b954fb06a32e871adb9f0")
+    }
+  ]
+}
+[4/3/2023, 11:16:49 PM] server	 employee-route.js - {
+  _id: new ObjectId("6419044db9a84caff39b1350"),
+  empId: 1011,
+  doing: [],
+  done: [
+    {
+      text: "commit tonight's code",
+      _id: new ObjectId("642b933ddd5658cf2403c0b4")
+    }
+  ],
+  todo: [
+    {
+      text: 'Test update',
+      _id: new ObjectId("642b933ddd5658cf2403c0b2")
+    },
+    {
+      text: 'Doe this still work?',
+      _id: new ObjectId("642b954fb06a32e871adb9f0")
+    }
+  ]
+}
+[4/4/2023, 6:51:27 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  firstName: 'Adam',
+  lastName: 'Young',
+  __v: 12,
+  done: [],
+  todo: [],
+  doing: [
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("642b8bfa6047f89438b3b767")
+    },
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642b8bfa6047f89438b3b768")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642b8bfa6047f89438b3b769")
+    }
+  ]
+}
+[4/4/2023, 6:51:27 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [],
+  todo: [],
+  doing: [
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("642b8bfa6047f89438b3b767")
+    },
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642b8bfa6047f89438b3b768")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642b8bfa6047f89438b3b769")
+    }
+  ]
+}
+[4/4/2023, 6:51:50 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  firstName: 'Adam',
+  lastName: 'Young',
+  __v: 13,
+  done: [],
+  todo: [
+    {
+      text: 'Here is a task',
+      _id: new ObjectId("642caa06b06a32e871adba0a")
+    }
+  ],
+  doing: [
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("642b8bfa6047f89438b3b767")
+    },
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642b8bfa6047f89438b3b768")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642b8bfa6047f89438b3b769")
+    }
+  ]
+}
+[4/4/2023, 6:53:06 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  firstName: 'Adam',
+  lastName: 'Young',
+  __v: 14,
+  done: [],
+  todo: [
+    {
+      text: 'Here is a task',
+      _id: new ObjectId("642caa06b06a32e871adba0a")
+    },
+    {
+      text: 'This is another task',
+      _id: new ObjectId("642caa52b06a32e871adba11")
+    }
+  ],
+  doing: [
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("642b8bfa6047f89438b3b767")
+    },
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642b8bfa6047f89438b3b768")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642b8bfa6047f89438b3b769")
+    }
+  ]
+}
+[4/5/2023, 5:26:27 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  firstName: 'Adam',
+  lastName: 'Young',
+  __v: 15,
+  done: [],
+  todo: [
+    {
+      text: 'Here is a task',
+      _id: new ObjectId("642caa06b06a32e871adba0a")
+    },
+    {
+      text: 'This is another task',
+      _id: new ObjectId("642caa52b06a32e871adba11")
+    },
+    {
+      text: 'Style success!',
+      _id: new ObjectId("642de783b06a32e871adba19")
+    }
+  ],
+  doing: [
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("642b8bfa6047f89438b3b767")
+    },
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642b8bfa6047f89438b3b768")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642b8bfa6047f89438b3b769")
+    }
+  ]
+}
+[4/5/2023, 5:36:03 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [],
+  todo: [
+    {
+      text: 'Here is a task',
+      _id: new ObjectId("642caa06b06a32e871adba0a")
+    },
+    {
+      text: 'This is another task',
+      _id: new ObjectId("642caa52b06a32e871adba11")
+    },
+    {
+      text: 'Style success!',
+      _id: new ObjectId("642de783b06a32e871adba19")
+    }
+  ],
+  doing: [
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("642b8bfa6047f89438b3b767")
+    },
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642b8bfa6047f89438b3b768")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642b8bfa6047f89438b3b769")
+    }
+  ]
+}
+[4/5/2023, 5:37:55 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [],
+  todo: [
+    {
+      text: 'Here is a task',
+      _id: new ObjectId("642caa06b06a32e871adba0a")
+    },
+    {
+      text: 'This is another task',
+      _id: new ObjectId("642caa52b06a32e871adba11")
+    },
+    {
+      text: 'Style success!',
+      _id: new ObjectId("642de783b06a32e871adba19")
+    }
+  ],
+  doing: [
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("642b8bfa6047f89438b3b767")
+    },
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642b8bfa6047f89438b3b768")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642b8bfa6047f89438b3b769")
+    }
+  ]
+}
+[4/5/2023, 5:37:57 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [],
+  todo: [
+    {
+      text: 'Here is a task',
+      _id: new ObjectId("642caa06b06a32e871adba0a")
+    },
+    {
+      text: 'This is another task',
+      _id: new ObjectId("642caa52b06a32e871adba11")
+    },
+    {
+      text: 'Style success!',
+      _id: new ObjectId("642de783b06a32e871adba19")
+    }
+  ],
+  doing: [
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("642b8bfa6047f89438b3b767")
+    },
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642b8bfa6047f89438b3b768")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642b8bfa6047f89438b3b769")
+    }
+  ]
+}
+[4/5/2023, 5:38:41 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  firstName: 'Adam',
+  lastName: 'Young',
+  __v: 16,
+  done: [],
+  todo: [
+    {
+      text: 'Here is a task',
+      _id: new ObjectId("642caa06b06a32e871adba0a")
+    },
+    {
+      text: 'This is another task',
+      _id: new ObjectId("642caa52b06a32e871adba11")
+    },
+    {
+      text: 'Style success!',
+      _id: new ObjectId("642de783b06a32e871adba19")
+    },
+    {
+      text: 'I think that will nice',
+      _id: new ObjectId("642dea61b06a32e871adba37")
+    }
+  ],
+  doing: [
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("642b8bfa6047f89438b3b767")
+    },
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642b8bfa6047f89438b3b768")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642b8bfa6047f89438b3b769")
+    }
+  ]
+}
+[4/5/2023, 5:52:21 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [],
+  todo: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ]
+}
+[4/5/2023, 5:52:31 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [],
+  todo: [
+    {
+      text: 'Here is a task',
+      _id: new ObjectId("642caa06b06a32e871adba0a")
+    },
+    {
+      text: 'This is another task',
+      _id: new ObjectId("642caa52b06a32e871adba11")
+    },
+    {
+      text: 'Style success!',
+      _id: new ObjectId("642de783b06a32e871adba19")
+    },
+    {
+      text: 'I think that will nice',
+      _id: new ObjectId("642dea61b06a32e871adba37")
+    }
+  ],
+  doing: [
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("642b8bfa6047f89438b3b767")
+    },
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642b8bfa6047f89438b3b768")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642b8bfa6047f89438b3b769")
+    }
+  ]
+}
+[4/5/2023, 5:53:36 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  firstName: 'Adam',
+  lastName: 'Young',
+  __v: 17,
+  done: [],
+  todo: [
+    {
+      text: 'This is another task',
+      _id: new ObjectId("642caa52b06a32e871adba11")
+    },
+    {
+      text: 'Style success!',
+      _id: new ObjectId("642de783b06a32e871adba19")
+    },
+    {
+      text: 'I think that will nice',
+      _id: new ObjectId("642dea61b06a32e871adba37")
+    }
+  ],
+  doing: [
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("642b8bfa6047f89438b3b767")
+    },
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642b8bfa6047f89438b3b768")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642b8bfa6047f89438b3b769")
+    }
+  ]
+}
+[4/5/2023, 5:59:32 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  firstName: 'Adam',
+  lastName: 'Young',
+  __v: 17,
+  done: [],
+  todo: [
+    {
+      text: 'This is another task',
+      _id: new ObjectId("642caa52b06a32e871adba11")
+    },
+    {
+      text: 'Style success!',
+      _id: new ObjectId("642de783b06a32e871adba19")
+    },
+    {
+      text: 'I think that will nice',
+      _id: new ObjectId("642dea61b06a32e871adba37")
+    }
+  ],
+  doing: [
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("642b8bfa6047f89438b3b767")
+    },
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642b8bfa6047f89438b3b768")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642b8bfa6047f89438b3b769")
+    }
+  ]
+}
+[4/5/2023, 6:09:55 PM] server	 employee-route.js - {
+  empId: 1007,
+  firstName: 'Adam',
+  lastName: 'Young',
+  todo: [
+    {
+      text: 'This is another task',
+      _id: new ObjectId("642df1b3abc4e1f59c258e55")
+    },
+    {
+      text: 'Style success!',
+      _id: new ObjectId("642df1b3abc4e1f59c258e56")
+    },
+    {
+      text: 'I think that will nice',
+      _id: new ObjectId("642df1b3abc4e1f59c258e57")
+    }
+  ],
+  doing: [
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("642df1b3abc4e1f59c258e58")
+    },
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642df1b3abc4e1f59c258e59")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642df1b3abc4e1f59c258e5a")
+    }
+  ],
+  done: [],
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  __v: 18
+}
+[4/5/2023, 6:12:37 PM] server	 employee-route.js - {
+  empId: 1007,
+  firstName: 'Adam',
+  lastName: 'Young',
+  todo: [
+    {
+      text: 'This is another task',
+      _id: new ObjectId("642df255abc4e1f59c258e63")
+    },
+    {
+      text: 'Style success!',
+      _id: new ObjectId("642df255abc4e1f59c258e64")
+    },
+    {
+      text: 'I think that will nice',
+      _id: new ObjectId("642df255abc4e1f59c258e65")
+    }
+  ],
+  doing: [
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("642df255abc4e1f59c258e66")
+    }
+  ],
+  done: [
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642df255abc4e1f59c258e67")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642df255abc4e1f59c258e68")
+    }
+  ],
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  __v: 19
+}
+[4/5/2023, 6:14:32 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642df255abc4e1f59c258e67")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642df255abc4e1f59c258e68")
+    }
+  ],
+  todo: [
+    {
+      text: 'This is another task',
+      _id: new ObjectId("642df255abc4e1f59c258e63")
+    },
+    {
+      text: 'Style success!',
+      _id: new ObjectId("642df255abc4e1f59c258e64")
+    },
+    {
+      text: 'I think that will nice',
+      _id: new ObjectId("642df255abc4e1f59c258e65")
+    }
+  ],
+  doing: [
+    {
+      text: 'Supercalifragilisticexpialidocious',
+      _id: new ObjectId("642df255abc4e1f59c258e66")
+    }
+  ]
+}

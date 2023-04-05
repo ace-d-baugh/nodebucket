@@ -71,3 +71,10 @@
 [4/3/2023, 10:25:08 PM] server	 employee-route.js - Bad Request. Unable to validate req.body against defined tasksSchema
 [4/3/2023, 10:30:02 PM] server	 employee-route.js - NotFoundError: Not Found
 [4/3/2023, 10:30:10 PM] server	 employee-route.js - input must be a number: NaN
+[4/5/2023, 5:54:45 PM] server	 employee-route.js - TaskId not found:  642caa06b06a32e871adba0a
+[4/5/2023, 5:55:52 PM] server	 employee-route.js - input must be a number: NaN
+[4/5/2023, 5:59:05 PM] server	 employee-route.js - Bad Request. Unable to validate req.body against defined tasksSchema
+[4/5/2023, 6:04:19 PM] server	 employee-route.js - Bad Request. Unable to validate req.body against defined tasksSchema
+[4/5/2023, 6:06:57 PM] server	 employee-route.js - Bad Request. Unable to validate req.body against defined tasksSchema
+[4/5/2023, 6:12:46 PM] server	 employee-route.js - Bad Request. Unable to validate req.body against defined tasksSchema
+[4/5/2023, 6:13:36 PM] server	 employee-route.js - input must be a number: NaN
