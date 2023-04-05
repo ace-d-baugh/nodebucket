@@ -140,4 +140,26 @@ export class HomeComponent implements OnInit {
       },
     });
   }
+
+  // Delete a task
+  deleteTask(empId: number, taskId: string)  {
+    //
+    // delete the task
+    this.taskService.deleteTask(empId, taskId).subscribe({
+      next: (res) => {
+        console.log(res);
+      },
+      error: (err) => {
+        console.error(err.message);
+        this.serverMessages = [
+          {
+            severity: 'error',
+            summary: 'Error',
+            detail: err.message,
+          },
+        ];
+      },
+    });
+  }
+
 }

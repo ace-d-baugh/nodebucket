@@ -79,7 +79,8 @@
               <div class="task-item" cdkDrag>
                 <i class="pi pi-bars task-move"></i>
                 <div class="task-item-title">{{ task.text }}</div>
-                <i class="pi pi-trash tasks-item-delete"></i>
+                <!-- Delete Icon -->
+                <i class="pi pi-trash tasks-item-delete" (click)="deleteTask(empId, task._id)"></i>
               </div>
             </div>
           </ng-template>

@@ -29,4 +29,8 @@ export class TaskService {
     });
   }
 
+  // Delete an employee's task
+  deleteTask(empId: number, taskId: string): Observable<any> {
+    return this.http.delete(`/api/employees/${empId}/tasks/${taskId}`);
+  }
 }

@@ -107,6 +107,31 @@ p-messages {
   color: var(--gray) !important;
 }
 
+.p-toast .p-toast.message.p-toast-message-info {
+  background: var(--secondary-transparent) !important;
+  border: 1px solid var(--accent) !important;
+  color: var(--gray) !important;
+  box-shadow: 3px 3px 3px var(--secondary-transparent);
+}
+
+.p-dialog .p-dialog-header, .p-dialog-content, .p-dialog-footer {
+    background: var(--secondary) !important;
+    color: var(--gray) !important;
+}
+
+.p-dialog .p-dialog-header .p-dialog-header-icon {
+    color: var(--accent) !important;
+}
+
+.pi-exclamation-triangle:before {
+    color: var(--warn) !important;
+}
+
+.p-button {
+    color: var(--primary) !important;
+    background: var(--accent) !important;
+}
+
 .mat-form-field {
   font-family: var(--font-primary) !important;
   font-size: inherit;
