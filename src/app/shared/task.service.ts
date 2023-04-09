@@ -2,7 +2,7 @@
 ============================================
 ; Title: task.service.ts
 ; Author: Ace Baugh
-; Date: April 2, 2023
+; Date: April 9, 2023
 ; Description: Task service
 ============================================
 */
@@ -31,7 +31,12 @@ export class TaskService {
   }
 
   // update an employee's tasks
-  updateTask(empId: number, todo: Item[], doing: Item[], done: Item[]): Observable<any> {
+  updateTask(
+    empId: number,
+    todo: Item[],
+    doing: Item[],
+    done: Item[]
+  ): Observable<any> {
     return this.http.put(`/api/employees/${empId}/tasks`, {
       todo,
       doing,

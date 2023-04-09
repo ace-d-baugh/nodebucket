@@ -2,7 +2,7 @@
 ============================================
 ; Title: about.component.ts
 ; Author: Ace Baugh
-; Date: April 2, 2023
+; Date: April 9, 2023
 ; Description: This is the about component
 ============================================
 */

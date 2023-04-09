@@ -2,7 +2,7 @@
 ============================================
 ; Title: employee-route.js
 ; Author: Ace Baugh
-; Date: April 2, 2023
+; Date: April 9, 2023
 ; Description: Employee route file
 ============================================
 */
@@ -21,7 +21,6 @@ const router = express.Router();
 const myFile = "employee-route.js";
 // Create the ajv object.
 const ajv = new Ajv();
-
 
 // *** Unneeded code ***
 /*
@@ -77,7 +76,6 @@ router.get('/:id/alltasks', async (req, res, next) => {
 // *** End uneeded code ***
 */
 
-
 // Function to check if the id is a number.
 const checkNum = (id) => {
   id = parseInt(id, 10);
@@ -114,47 +112,47 @@ const tasksSchema = {
       type: "array",
       additionalProperties: false,
       items: {
-        type: 'object',
+        type: "object",
         properties: {
-          text: { type: 'string'},
-          _id: { type: 'string'}
+          text: { type: "string" },
+          _id: { type: "string" },
         },
-        required: ['text', '_id'],
-        additionalProperties: false
-      }
+        required: ["text", "_id"],
+        additionalProperties: false,
+      },
     },
     doing: {
       type: "array",
       additionalProperties: false,
       items: {
-        type: 'object',
+        type: "object",
         properties: {
-          text: { type: 'string'},
-          _id: { type: 'string'}
+          text: { type: "string" },
+          _id: { type: "string" },
         },
-        required: ['text', '_id'],
-        additionalProperties: false
-      }
+        required: ["text", "_id"],
+        additionalProperties: false,
+      },
     },
     done: {
       type: "array",
       additionalProperties: false,
       items: {
-        type: 'object',
+        type: "object",
         properties: {
-          text: { type: 'string'},
-          _id: { type: 'string'}
+          text: { type: "string" },
+          _id: { type: "string" },
         },
-        required: ['text', '_id'],
-        additionalProperties: false
-      }
+        required: ["text", "_id"],
+        additionalProperties: false,
+      },
     },
   },
 };
 
 // Function to get the task from the tasks array.
 function getTask(id, tasks) {
-  const task = tasks.find(item => item._id.toString() === id);
+  const task = tasks.find((item) => item._id.toString() === id);
   return task;
 }
 
@@ -260,12 +258,15 @@ router.get("/:empId/tasks", async (req, res, next) => {
   if (err === false) {
     try {
       // Find the employee by id.
-      const emp = await Employee.findOne({ empId: empId }, "empId todo doing done");
+      const emp = await Employee.findOne(
+        { empId: empId },
+        "empId todo doing done"
+      );
 
       // If the employee is found.
       if (emp) {
         // Log the employee to the console.
-        console.log('This is the employee data: ', emp);
+        console.log("This is the employee data: ", emp);
         // Update the debug log.
         debugLogger({ filename: myFile, message: emp });
         // Send the employee to the client.
@@ -496,26 +497,29 @@ router.put("/:empId/tasks", async (req, res, next) => {
     // Log the error to the console.
     console.error("req.params.empId must be a number. unlike: ", empId);
     // Update the error log.
-    errorLogger({ filename: myFile, message: `input must be a number: ${empId}`});
+    errorLogger({
+      filename: myFile,
+      message: `input must be a number: ${empId}`,
+    });
     // Send the error to the next middleware.
     next(err);
-    return
+    return;
   }
 
   // Get the task id from the request.
   try {
     // Find the employee by id.
-    let emp = await Employee.findOne({'empId': empId})
+    let emp = await Employee.findOne({ empId: empId });
 
     // If the employee is not found.
     if (!emp) {
       // Log the error to the console.
       console.error(createError(404));
       // Update the error log.
-      errorLogger({ filename: myFile, message: createError(404)});
+      errorLogger({ filename: myFile, message: createError(404) });
       // Send the error to the next middleware.
       next(createError(404));
-      return
+      return;
     }
 
     // Validate the tasks against the tasksSchema
@@ -530,7 +534,9 @@ router.put("/:empId/tasks", async (req, res, next) => {
       // Set the status code
       err.status = 400;
       // Log the error to the console.
-      console.error("Bad Request. Unable to validate req.body against defined tasksSchema");
+      console.error(
+        "Bad Request. Unable to validate req.body against defined tasksSchema"
+      );
       // Update the error log.
       errorLogger({
         filename: myFile,
@@ -539,7 +545,7 @@ router.put("/:empId/tasks", async (req, res, next) => {
       });
       // Send the error to the next middleware.
       next(err);
-      return
+      return;
     }
 
     // Update the employee's tasks
@@ -596,7 +602,6 @@ router.put("/:empId/tasks", async (req, res, next) => {
  *         description: Employee not found
  */
 router.delete("/:empId/tasks/:taskId", async (req, res, next) => {
-
   // Get the task id from the request.
   let taskId = req.params.taskId;
   // Get the employee id from the request.
@@ -613,15 +618,18 @@ router.delete("/:empId/tasks/:taskId", async (req, res, next) => {
     // Log the error to the console.
     console.error("req.params.empId must be a number. unlike: ", empId);
     // Update the error log.
-    errorLogger({ filename: myFile, message: `input must be a number: ${empId}`});
+    errorLogger({
+      filename: myFile,
+      message: `input must be a number: ${empId}`,
+    });
     // Send the error to the next middleware.
     next(createError(400));
-    return
+    return;
   }
 
   try {
     // Find the employee by id.
-    let emp = await Employee.findOne({ 'empId': empId });
+    let emp = await Employee.findOne({ empId: empId });
 
     // If the employee is not found.
     if (!emp) {
@@ -630,10 +638,10 @@ router.delete("/:empId/tasks/:taskId", async (req, res, next) => {
       // Log the error to the console.
       console.error(createError(404));
       // Update the error log.
-      errorLogger({ filename: myFile, message: createError(404)});
+      errorLogger({ filename: myFile, message: createError(404) });
       // Send the error back to the next middleware.
       next(err);
-      return
+      return;
     }
 
     // Find the task in the employee's todo array.
@@ -662,16 +670,23 @@ router.delete("/:empId/tasks/:taskId", async (req, res, next) => {
     }
 
     // If the task is not found in any of the arrays.
-    if (todoTask === undefined && doingTask === undefined && doneTask === undefined) {
+    if (
+      todoTask === undefined &&
+      doingTask === undefined &&
+      doneTask === undefined
+    ) {
       // Store the error message
       next(createError(404));
       // Log the error to the console.
-      console.error('TaskId not found: ', taskId);
+      console.error("TaskId not found: ", taskId);
       // Update the error log.
-      errorLogger({ filename: myFile, message: `TaskId not found:  ${taskId}`});
+      errorLogger({
+        filename: myFile,
+        message: `TaskId not found:  ${taskId}`,
+      });
       // Send the error to the next middleware.
       next(err);
-      return
+      return;
     }
 
     // Save the employee to the database.
@@ -685,7 +700,7 @@ router.delete("/:empId/tasks/:taskId", async (req, res, next) => {
   } catch (err) {
     // Send the error to the next middleware.
     next(err);
-  };
+  }
 });
 
 //export the router.

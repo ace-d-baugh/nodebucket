@@ -2,7 +2,7 @@
 ============================================
 ; Title: login.component.ts
 ; Author: Ace Baugh
-; Date: April 2, 2023
+; Date: April 9, 2023
 ; Description: this component is for the login page
 ============================================
 */

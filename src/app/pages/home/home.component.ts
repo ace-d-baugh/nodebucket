@@ -2,7 +2,7 @@
 ============================================
 ; Title: home.component.ts
 ; Author: Ace Baugh
-; Date: April 2, 2023
+; Date: April 9, 2023
 ; Description: this component is the home component
 ============================================
 */
@@ -16,7 +16,11 @@ import { Employee } from 'src/app/shared/models/employee.interface';
 import { Item } from 'src/app/shared/models/item.interface';
 import { MatDialog } from '@angular/material/dialog';
 import { ConfirmDialogComponent } from 'src/app/shared/confirm-dialog/confirm-dialog.component';
-import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
+import {
+  CdkDragDrop,
+  moveItemInArray,
+  transferArrayItem,
+} from '@angular/cdk/drag-drop';
 
 // Home component
 @Component({
@@ -163,9 +167,9 @@ export class HomeComponent implements OnInit {
           this.taskService.deleteTask(this.empId, taskId).subscribe({
             next: (res) => {
               // remove the task from the todo array
-              this.todo = this.todo.filter(task => task._id !== taskId);
-              this.doing = this.doing.filter(task => task._id !== taskId);
-              this.done = this.done.filter(task => task._id !== taskId);
+              this.todo = this.todo.filter((task) => task._id !== taskId);
+              this.doing = this.doing.filter((task) => task._id !== taskId);
+              this.done = this.done.filter((task) => task._id !== taskId);
               this.serverMessages = [
                 {
                   severity: 'success',
@@ -238,11 +242,6 @@ export class HomeComponent implements OnInit {
       );
       console.log('Moved task to a new list');
     }
-    this.updateTaskList(
-      this.empId,
-      this.todo,
-      this.doing,
-      this.done
-    );
+    this.updateTaskList(this.empId, this.todo, this.doing, this.done);
   }
 }
