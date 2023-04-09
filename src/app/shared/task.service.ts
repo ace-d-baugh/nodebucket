@@ -10,6 +10,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Item } from './models/item.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -26,6 +27,15 @@ export class TaskService {
   createTask(empId: number, task: string): Observable<any> {
     return this.http.post(`/api/employees/${empId}/tasks`, {
       text: task,
+    });
+  }
+
+  // update an employee's tasks
+  updateTask(empId: number, todo: Item[], doing: Item[], done: Item[]): Observable<any> {
+    return this.http.put(`/api/employees/${empId}/tasks`, {
+      todo,
+      doing,
+      done,
     });
   }
 

@@ -25,7 +25,7 @@
   </div>
   <!-- Create Items for ToDo List -->
   <div class="create-task-container">
-    <form [formGroup]="taskForm" (ngSubmit)="createTask(); taskForm.reset();">
+    <form [formGroup]="taskForm" (ngSubmit)="createTask(); taskForm.reset()">
       <div class="create-task-input-container">
         <input
           formControlName="task"
@@ -34,7 +34,11 @@
         />
         <div class="create-task-input-button">
           <!-- primeng plus icon -->
-          <button type="submit" [disabled]="!taskForm.valid" class="create-button">
+          <button
+            type="submit"
+            [disabled]="!taskForm.valid"
+            class="create-button"
+          >
             <p class="create-plus">+</p>
           </button>
         </div>
@@ -42,16 +46,35 @@
 
       <div class="errors-container">
         <!-- Error Message -->
-        <div *ngIf="taskForm.controls['task'].hasError('required') && taskForm.controls['task'].touched">
+        <div
+          *ngIf="
+            taskForm.controls['task'].hasError('required') &&
+            taskForm.controls['task'].touched
+          "
+        >
           <p class="error-message">Task is a required field</p>
         </div>
 
-        <div *ngIf="taskForm.controls['task'].hasError('minlength') && taskForm.controls['task'].touched">
-          <p class="error-message">The task field must be at least 3 characters in length</p>
+        <div
+          *ngIf="
+            taskForm.controls['task'].hasError('minlength') &&
+            taskForm.controls['task'].touched
+          "
+        >
+          <p class="error-message">
+            The task field must be at least 3 characters in length
+          </p>
         </div>
 
-        <div *ngIf="taskForm.controls['task'].hasError('maxlength') && taskForm.controls['task'].touched">
-          <p class="error-message">The task field must be less than 35 characters in length</p>
+        <div
+          *ngIf="
+            taskForm.controls['task'].hasError('maxlength') &&
+            taskForm.controls['task'].touched
+          "
+        >
+          <p class="error-message">
+            The task field must be less than 35 characters in length
+          </p>
         </div>
       </div>
     </form>
@@ -60,84 +83,147 @@
   <!-- Tasks Viewing Area -->
   <div class="all-tasks-container">
     <div class="row">
+
       <!-- To-Do Tasks -->
       <div class="tasks">
         <div class="tasks-header">ToDo</div>
+
         <div class="tasks-container">
+
           <div class="tasks-counter">
             <div class="tasks-counter-title">ToDo Tasks:</div>
             <div class="tasks-counter-count">{{ todo.length }}</div>
           </div>
-          <!-- If no tasks, place empty task holder-->
-          <div *ngIf="todo.length === 0; else elseToDoBlock" class="tasks-list">
-            <div class="empty-spot">No Tasks</div>
-          </div>
-          <ng-template #elseToDoBlock>
-            <!-- Loop of ToDo Tasks -->
-            <div class="tasks-list" *ngFor="let task of todo">
-              <!-- If tasks, place the list of tasks -->
-              <div class="task-item" cdkDrag>
-                <i class="pi pi-bars task-move"></i>
-                <div class="task-item-title">{{ task.text }}</div>
-                <!-- Delete Icon -->
-                <i class="pi pi-trash tasks-item-delete" (click)="deleteTask(empId, task._id)"></i>
-              </div>
+
+          <div
+            class="all-tasks"
+            cdkDropList
+            #todoList="cdkDropList"
+            [cdkDropListData]="todo"
+            [cdkDropListConnectedTo]="[doingList, doneList]"
+            (cdkDropListDropped)="drop($event)"
+          >
+            <!-- If no tasks, place empty task holder-->
+            <div
+              *ngIf="todo.length === 0; else elseToDoBlock"
+              class="tasks-list"
+            >
+              <div class="empty-spot">No Tasks</div>
             </div>
-          </ng-template>
+
+            <ng-template #elseToDoBlock>
+              <!-- Loop of ToDo Tasks -->
+              <div class="tasks-list" *ngFor="let task of todo">
+                <!-- If tasks, place the list of tasks -->
+                <div class="task-item" cdkDrag>
+                  <i class="pi pi-bars task-move"></i>
+                  <div class="task-item-title">{{ task.text }}</div>
+                  <!-- Delete Icon -->
+                  <i
+                    class="pi pi-trash tasks-item-delete"
+                    (click)="deleteTask(task._id)"
+                  ></i>
+                </div>
+              </div>
+            </ng-template>
+
+          </div>
         </div>
       </div>
 
-      <!-- *** Doing Tasks For Later *** -->
+      <!-- Doing Tasks -->
       <div class="tasks">
         <div class="tasks-header">Doing</div>
+
         <div class="tasks-container">
+
           <div class="tasks-counter">
             <div class="tasks-counter-title">Doing Tasks:</div>
-            <div class="tasks-counter-count">{{doing.length}}</div>
+            <div class="tasks-counter-count">{{ doing.length }}</div>
           </div>
-          <!-- If no tasks, place empty task holder -->
-          <div *ngIf="doing.length === 0; else elseDoingBlock" class="tasks-list">
-            <div class="empty-spot">No Tasks</div>
-          </div>
-          <ng-template #elseDoingBlock>
-            <!-- Loop of Doing Tasks -->
-            <div class="tasks-list" *ngFor="let tasks of doing">
-              <!-- If tasks, place the list of tasks -->
-              <div class="task-item">
-                <i class="pi pi-bars task-move"></i>
-                <div class="task-item-title">{{ tasks.text }}</div>
-                <i class="pi pi-trash tasks-item-delete"></i>
-              </div>
+
+          <div
+            class="all-tasks"
+            cdkDropList
+            #doingList="cdkDropList"
+            [cdkDropListData]="doing"
+            [cdkDropListConnectedTo]="[todoList, doneList]"
+            (cdkDropListDropped)="drop($event)"
+          >
+            <!-- If no tasks, place empty task holder -->
+            <div
+              *ngIf="doing.length === 0; else elseDoingBlock"
+              class="tasks-list"
+            >
+              <div class="empty-spot">No Tasks</div>
             </div>
-          </ng-template>
+
+            <ng-template #elseDoingBlock>
+              <!-- Loop of Doing Tasks -->
+              <div class="tasks-list" *ngFor="let task of doing">
+                <!-- If tasks, place the list of tasks -->
+                <div class="task-item" cdkDrag>
+                  <i class="pi pi-bars task-move"></i>
+                  <div class="task-item-title">{{ task.text }}</div>
+                  <!-- Delete Icon -->
+                  <i
+                    class="pi pi-trash tasks-item-delete"
+                    (click)="deleteTask(task._id)"
+                  ></i>
+                </div>
+              </div>
+            </ng-template>
+
+          </div>
         </div>
       </div>
 
       <!-- Done Tasks -->
       <div class="tasks">
         <div class="tasks-header">Done</div>
+
         <div class="tasks-container">
+
           <div class="tasks-counter">
             <div class="tasks-counter-title">Done Tasks:</div>
             <div class="tasks-counter-count">{{ done.length }}</div>
           </div>
-          <!-- If no tasks, place empty task holder-->
-          <div *ngIf="done.length === 0; else elseDoneBlock" class="tasks-list">
-            <div class="empty-spot">No Tasks</div>
-          </div>
-          <ng-template #elseDoneBlock>
-            <!-- Loop of Done Tasks -->
-            <div class="tasks-list" *ngFor="let task of done">
-              <!-- If tasks, place the list of tasks -->
-              <div class="task-item">
-                <i class="pi pi-bars task-move"></i>
-                <div class="task-item-title">{{ task.text }}</div>
-                <i class="pi pi-trash tasks-item-delete"></i>
-              </div>
+
+          <div
+            class="all-tasks"
+            cdkDropList
+            #doneList="cdkDropList"
+            [cdkDropListData]="done"
+            [cdkDropListConnectedTo]="[todoList, doingList]"
+            (cdkDropListDropped)="drop($event)"
+          >
+            <!-- If no tasks, place empty task holder-->
+            <div
+              *ngIf="done.length === 0; else elseDoneBlock"
+              class="tasks-list"
+            >
+              <div class="empty-spot">No Tasks</div>
             </div>
-          </ng-template>
+
+            <ng-template #elseDoneBlock>
+              <!-- Loop of Done Tasks -->
+              <div class="tasks-list" *ngFor="let task of done">
+                <!-- If tasks, place the list of tasks -->
+                <div class="task-item" cdkDrag>
+                  <i class="pi pi-bars task-move"></i>
+                  <div class="task-item-title">{{ task.text }}</div>
+                  <i
+                    class="pi pi-trash tasks-item-delete"
+                    (click)="deleteTask(task._id)"
+                  ></i>
+                </div>
+              </div>
+            </ng-template>
+
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 </div>

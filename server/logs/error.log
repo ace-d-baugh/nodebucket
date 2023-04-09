@@ -78,3 +78,5 @@
 [4/5/2023, 6:06:57 PM] server	 employee-route.js - Bad Request. Unable to validate req.body against defined tasksSchema
 [4/5/2023, 6:12:46 PM] server	 employee-route.js - Bad Request. Unable to validate req.body against defined tasksSchema
 [4/5/2023, 6:13:36 PM] server	 employee-route.js - input must be a number: NaN
+[4/5/2023, 8:52:12 PM] server	 employee-route.js - TaskId not found:  642df255abc4e1f59c258e63
+[4/5/2023, 9:32:53 PM] server	 employee-route.js - Bad Request. Unable to validate req.body against defined tasksSchema

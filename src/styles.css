@@ -107,6 +107,13 @@ p-messages {
   color: var(--gray) !important;
 }
 
+.p-message.p-message-info {
+    background: var(--accent-transparent) !important;
+    border: 1px solid var(--primary) !important;
+    color: var(--primary) !important;
+    box-shadow: 3px 3px 3px var(--secondary-transparent);
+}
+
 .p-toast .p-toast.message.p-toast-message-info {
   background: var(--secondary-transparent) !important;
   border: 1px solid var(--accent) !important;
@@ -189,6 +196,35 @@ p-messages {
   color: var(--gray) !important;
 }
 
+.mat-dialog-container {
+    box-shadow: 3px 3px 10px var(--warn) !important;
+    background: var(--gray) !important;
+    color: var(--primary) !important;
+}
+
+.dialog-warning {
+    color: var(--accent) !important;
+}
+
+.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+    background-color: var(--secondary) !important;
+}
+.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+    color: var(--gray) !important;
+}
+
+.p-message.p-message-info .p-message-close {
+    color: var(--primary) !important;
+}
+
+.p-message.p-message-info .p-message-icon {
+    color: var(--primary) !important;
+}
+
+.dialog-p {
+    margin: 0 0 1rem 0 !important;
+}
+
 .p-1 {
   padding: 1rem;
 }
@@ -211,4 +247,8 @@ p-messages {
 
 .default-text {
   color: var(--primary);
+}
+
+.cdk-drag-preview {
+  border: 1px dashed var(--primary) !important;
 }

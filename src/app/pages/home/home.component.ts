@@ -14,6 +14,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Message } from 'primeng/api/message';
 import { Employee } from 'src/app/shared/models/employee.interface';
 import { Item } from 'src/app/shared/models/item.interface';
+import { MatDialog } from '@angular/material/dialog';
+import { ConfirmDialogComponent } from 'src/app/shared/confirm-dialog/confirm-dialog.component';
+import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 
 // Home component
 @Component({
@@ -48,7 +51,8 @@ export class HomeComponent implements OnInit {
   constructor(
     private taskService: TaskService,
     private cookieService: CookieService,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private dialog: MatDialog
   ) {
     // variables
     this.empId = parseInt(this.cookieService.get('session_user'), 10);
@@ -74,7 +78,7 @@ export class HomeComponent implements OnInit {
         this.serverMessages = [
           {
             severity: 'error',
-            summary: 'Error',
+            summary: 'Error:',
             detail: err.message,
           },
         ];
@@ -114,7 +118,7 @@ export class HomeComponent implements OnInit {
         this.serverMessages = [
           {
             severity: 'error',
-            summary: 'Error',
+            summary: 'Error:',
             detail: err.message,
           },
         ];
@@ -133,7 +137,7 @@ export class HomeComponent implements OnInit {
         this.serverMessages = [
           {
             severity: 'success',
-            summary: 'Success',
+            summary: 'Success:',
             detail: this.newTaskMessage,
           },
         ];
@@ -142,19 +146,74 @@ export class HomeComponent implements OnInit {
   }
 
   // Delete a task
-  deleteTask(empId: number, taskId: string)  {
-    //
-    // delete the task
-    this.taskService.deleteTask(empId, taskId).subscribe({
+  deleteTask(taskId: string) {
+    // Delete confirmation dialog
+    const dialogRef = this.dialog.open(ConfirmDialogComponent, {
+      data: {
+        header: 'Delete Task Dialog',
+        body: 'Are you sure you want to delete this task?',
+      },
+      disableClose: true,
+    });
+
+    dialogRef.afterClosed().subscribe({
+      next: (result) => {
+        if (result === 'confirm') {
+          // delete the task
+          this.taskService.deleteTask(this.empId, taskId).subscribe({
+            next: (res) => {
+              // remove the task from the todo array
+              this.todo = this.todo.filter(task => task._id !== taskId);
+              this.doing = this.doing.filter(task => task._id !== taskId);
+              this.done = this.done.filter(task => task._id !== taskId);
+              this.serverMessages = [
+                {
+                  severity: 'success',
+                  summary: 'Success:',
+                  detail: 'Task Deleted Successfully',
+                },
+              ];
+              console.log(res);
+            },
+            error: (err) => {
+              console.error(err.message);
+              this.serverMessages = [
+                {
+                  severity: 'error',
+                  summary: 'Error:',
+                  detail: err.message,
+                },
+              ];
+            },
+          });
+        } else {
+          this.serverMessages = [
+            {
+              severity: 'info',
+              summary: 'Info:',
+              detail: 'Delete cancelled',
+            },
+          ];
+        }
+      },
+    });
+  }
+
+  updateTaskList(empId: number, todo: Item[], doing: Item[], done: Item[]) {
+    // update the task list
+    this.taskService.updateTask(empId, todo, doing, done).subscribe({
       next: (res) => {
         console.log(res);
+        this.todo = todo;
+        this.doing = doing;
+        this.done = done;
       },
       error: (err) => {
         console.error(err.message);
         this.serverMessages = [
           {
             severity: 'error',
-            summary: 'Error',
+            summary: 'Error:',
             detail: err.message,
           },
         ];
@@ -162,4 +221,28 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  drop(event: CdkDragDrop<any[]>) {
+    if (event.previousContainer === event.container) {
+      moveItemInArray(
+        event.container.data,
+        event.previousIndex,
+        event.currentIndex
+      );
+      console.log('Reordered tasks in the existing list');
+    } else {
+      transferArrayItem(
+        event.previousContainer.data,
+        event.container.data,
+        event.previousIndex,
+        event.currentIndex
+      );
+      console.log('Moved task to a new list');
+    }
+    this.updateTaskList(
+      this.empId,
+      this.todo,
+      this.doing,
+      this.done
+    );
+  }
 }

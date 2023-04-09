@@ -113,17 +113,41 @@ const tasksSchema = {
     todo: {
       type: "array",
       additionalProperties: false,
-      items: taskSchema,
+      items: {
+        type: 'object',
+        properties: {
+          text: { type: 'string'},
+          _id: { type: 'string'}
+        },
+        required: ['text', '_id'],
+        additionalProperties: false
+      }
     },
     doing: {
       type: "array",
       additionalProperties: false,
-      items: taskSchema,
+      items: {
+        type: 'object',
+        properties: {
+          text: { type: 'string'},
+          _id: { type: 'string'}
+        },
+        required: ['text', '_id'],
+        additionalProperties: false
+      }
     },
     done: {
       type: "array",
       additionalProperties: false,
-      items: taskSchema,
+      items: {
+        type: 'object',
+        properties: {
+          text: { type: 'string'},
+          _id: { type: 'string'}
+        },
+        required: ['text', '_id'],
+        additionalProperties: false
+      }
     },
   },
 };
