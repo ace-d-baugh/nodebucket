@@ -7,6 +7,7 @@
 ============================================
 */
 
+// Base response model
 class BaseResponse {
   constructor(httpCode, message, data) {
     this.httpCode = httpCode;
@@ -14,6 +15,7 @@ class BaseResponse {
     this.data = data;
   }
 
+  // Convert to object
   toObject() {
     return {
       httpCode: this.httpCode,

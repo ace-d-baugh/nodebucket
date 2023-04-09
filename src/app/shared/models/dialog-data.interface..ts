@@ -7,6 +7,7 @@
 ============================================
 */
 
+// Dialog data interface
 export interface DialogData {
   header: string;
   body: string;

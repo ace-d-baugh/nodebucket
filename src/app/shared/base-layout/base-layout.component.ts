@@ -44,7 +44,7 @@ export class BaseLayoutComponent implements OnInit {
   ngOnInit(): void {}
 
   logout() {
-    // popop to confirm logout
+    // popup to confirm logout
     this.confirmationService.confirm({
       message: 'Are you sure that you want to logout?',
       header: 'Logout Confirmation',
@@ -64,6 +64,7 @@ export class BaseLayoutComponent implements OnInit {
               detail: 'You have cancelled the logout',
             });
             break;
+            // if the user closes the dialog, create a toast message
           case ConfirmEventType.CANCEL:
             this.messageService.add({
               severity: 'info',

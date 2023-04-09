@@ -67,7 +67,7 @@ export class HomeComponent implements OnInit {
     this.newTaskId = '';
     this.newTaskMessage = '';
 
-    // final all tasks
+    // find all tasks
     this.taskService.findAllTasks(this.empId).subscribe({
       next: (res) => {
         // console.log the employee data
@@ -170,6 +170,7 @@ export class HomeComponent implements OnInit {
               this.todo = this.todo.filter((task) => task._id !== taskId);
               this.doing = this.doing.filter((task) => task._id !== taskId);
               this.done = this.done.filter((task) => task._id !== taskId);
+              // Send success message
               this.serverMessages = [
                 {
                   severity: 'success',
@@ -177,10 +178,14 @@ export class HomeComponent implements OnInit {
                   detail: 'Task Deleted Successfully',
                 },
               ];
+              // console.log the response
               console.log(res);
             },
+            // error message
             error: (err) => {
+              // console.log the error message
               console.error(err.message);
+              // Send error message
               this.serverMessages = [
                 {
                   severity: 'error',
@@ -191,6 +196,7 @@ export class HomeComponent implements OnInit {
             },
           });
         } else {
+          // Send cancel message
           this.serverMessages = [
             {
               severity: 'info',
@@ -203,17 +209,22 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  // Update the task list
   updateTaskList(empId: number, todo: Item[], doing: Item[], done: Item[]) {
     // update the task list
     this.taskService.updateTask(empId, todo, doing, done).subscribe({
       next: (res) => {
+        // console.log the response
         console.log(res);
+        // save the todo, doing, and done data
         this.todo = todo;
         this.doing = doing;
         this.done = done;
       },
+      // error message
       error: (err) => {
         console.error(err.message);
+        // Send error message
         this.serverMessages = [
           {
             severity: 'error',
@@ -225,23 +236,30 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  // Drag and drop
   drop(event: CdkDragDrop<any[]>) {
+    // If the task is dropped in the same list
     if (event.previousContainer === event.container) {
+      // Reorder the tasks in the existing list
       moveItemInArray(
         event.container.data,
         event.previousIndex,
         event.currentIndex
       );
+      // console.log the message
       console.log('Reordered tasks in the existing list');
     } else {
+      // Move the task to a new list
       transferArrayItem(
         event.previousContainer.data,
         event.container.data,
         event.previousIndex,
         event.currentIndex
       );
+      // console.log the message
       console.log('Moved task to a new list');
     }
+    // Update the task list
     this.updateTaskList(this.empId, this.todo, this.doing, this.done);
   }
 }

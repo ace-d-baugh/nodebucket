@@ -9,6 +9,7 @@
 
 import { Component, OnInit } from '@angular/core';
 
+// Auth layout component
 @Component({
   selector: 'app-auth-layout',
   templateUrl: './auth-layout.component.html',
