@@ -50,17 +50,26 @@ p {
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--primary);
-  padding: 0 0 1rem;
+  margin: 0 0 1rem;
   line-height: 2rem;
 }
 
 .about-img {
   float: right;
-  padding-left: 2rem;
+  margin-left: 2rem;
   width: 40%;
   aspect-ratio: 1/1;
 }
 
 .about-action {
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .about-img {
+    float: none;
+    display: flex;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+  }
 }

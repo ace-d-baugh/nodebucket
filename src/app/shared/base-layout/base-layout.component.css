@@ -42,7 +42,7 @@
 }
 
 .navbar-link {
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -87,4 +87,23 @@
 
 .bu-link:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: 60px;
+  }
+
+  .navbar-link {
+    font-size: 1rem;
+  }
+
+  .logo,
+  .signed-in-container {
+    width: 60px;
+  }
+
+  .signed-in-as {
+    padding: 0.5rem;
+  }
 }

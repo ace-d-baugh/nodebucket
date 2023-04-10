@@ -260,3 +260,9 @@ p-messages {
 .cdk-drag-preview {
   border: 1px dashed var(--primary) !important;
 }
+
+@media screen and (max-width: 768px) {
+  .p-dialog {
+    width: 85% !important;
+  }
+}
