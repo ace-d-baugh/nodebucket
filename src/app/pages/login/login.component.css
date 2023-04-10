@@ -9,7 +9,7 @@
 
 .container {
   height: 100%;
-  max-width: 800px;
+  max-width: 1280px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -20,17 +20,17 @@
 
 .login-container {
   background: var(--gray-transparent);
-  margin-top: -200px;
+  margin: -200px .5rem;
   display: flex;
   flex-direction: column;
-  width: 500px;
-  height: 300px;
+  max-width: 500px;
   border-radius: 15px;
   overflow: hidden;
 }
 
 .login-title {
-  font-size: 35px;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
 }
 
 .login-subtitle {
@@ -41,21 +41,21 @@
 
 .sign-in-header {
   background: var(--secondary-transparent);
-  height: 80px;
   color: var(--gray);
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 15px;
+  padding: 1rem;
 }
 
 .sign-in-container {
-  height: 170px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 .btn-lg {
