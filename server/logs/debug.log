@@ -28097,3 +28097,1197 @@
     }
   ]
 }
+[4/9/2023, 11:45:16 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  firstName: 'Jeff',
+  lastName: 'Lynne',
+  __v: 9,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:45:16 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:46:36 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:46:38 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:48:02 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:48:16 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:48:23 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:49:01 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:49:03 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:50:26 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:50:29 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:50:46 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:50:49 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:50:51 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:52:15 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:52:17 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:52:23 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:52:29 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:52:31 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:52:32 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:52:34 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:52:36 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:53:12 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:53:18 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:53:19 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:53:33 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:53:44 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:53:57 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:54:01 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:54:07 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:54:09 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:54:12 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:54:18 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:54:20 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:54:21 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:54:33 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:54:35 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:54:40 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:54:40 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:54:54 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:55:14 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:55:19 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:55:21 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:55:34 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:55:47 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:56:42 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:57:16 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:57:42 PM] server	 employee-route.js - {
+  _id: new ObjectId("641903a4b9a84caff39b134d"),
+  empId: 1008,
+  done: [
+    { text: 'Anything', _id: new ObjectId("6425a19a1ff486d5d19232bc") }
+  ],
+  todo: [
+    {
+      text: 'Fix footer ',
+      _id: new ObjectId("64337dc81d8fc960fe862df2")
+    },
+    {
+      text: 'Something to do',
+      _id: new ObjectId("64259f5c7e7a35019bb6e818")
+    }
+  ],
+  doing: [
+    {
+      text: 'Read a chapter',
+      _id: new ObjectId("6422fd7bf6cb8ab1597c046b")
+    }
+  ]
+}
+[4/9/2023, 11:58:39 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  firstName: 'Adam',
+  lastName: 'Young',
+  __v: 113,
+  done: [ { text: 'Task 1', _id: new ObjectId("642e2ba919169f5252f7ed0e") } ],
+  todo: [
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642df255abc4e1f59c258e67")
+    },
+    { text: 'Task 3', _id: new ObjectId("642e2bb319169f5252f7ed1d") }
+  ],
+  doing: [
+    { text: 'Task 2', _id: new ObjectId("642e2bae19169f5252f7ed15") },
+    { text: 'Task 5', _id: new ObjectId("642e2bba19169f5252f7ed30") },
+    { text: 'Task 4', _id: new ObjectId("642e2bb619169f5252f7ed26") },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642df255abc4e1f59c258e68")
+    }
+  ]
+}
+[4/9/2023, 11:58:39 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [ { text: 'Task 1', _id: new ObjectId("642e2ba919169f5252f7ed0e") } ],
+  todo: [
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642df255abc4e1f59c258e67")
+    },
+    { text: 'Task 3', _id: new ObjectId("642e2bb319169f5252f7ed1d") }
+  ],
+  doing: [
+    { text: 'Task 2', _id: new ObjectId("642e2bae19169f5252f7ed15") },
+    { text: 'Task 5', _id: new ObjectId("642e2bba19169f5252f7ed30") },
+    { text: 'Task 4', _id: new ObjectId("642e2bb619169f5252f7ed26") },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642df255abc4e1f59c258e68")
+    }
+  ]
+}
+[4/9/2023, 11:59:15 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [ { text: 'Task 1', _id: new ObjectId("642e2ba919169f5252f7ed0e") } ],
+  todo: [
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642df255abc4e1f59c258e67")
+    },
+    { text: 'Task 3', _id: new ObjectId("642e2bb319169f5252f7ed1d") }
+  ],
+  doing: [
+    { text: 'Task 2', _id: new ObjectId("642e2bae19169f5252f7ed15") },
+    { text: 'Task 5', _id: new ObjectId("642e2bba19169f5252f7ed30") },
+    { text: 'Task 4', _id: new ObjectId("642e2bb619169f5252f7ed26") },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642df255abc4e1f59c258e68")
+    }
+  ]
+}
+[4/9/2023, 11:59:20 PM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [ { text: 'Task 1', _id: new ObjectId("642e2ba919169f5252f7ed0e") } ],
+  todo: [
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642df255abc4e1f59c258e67")
+    },
+    { text: 'Task 3', _id: new ObjectId("642e2bb319169f5252f7ed1d") }
+  ],
+  doing: [
+    { text: 'Task 2', _id: new ObjectId("642e2bae19169f5252f7ed15") },
+    { text: 'Task 5', _id: new ObjectId("642e2bba19169f5252f7ed30") },
+    { text: 'Task 4', _id: new ObjectId("642e2bb619169f5252f7ed26") },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642df255abc4e1f59c258e68")
+    }
+  ]
+}
