@@ -29291,3 +29291,113 @@
     }
   ]
 }
+[4/10/2023, 12:44:49 AM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642df255abc4e1f59c258e67")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642df255abc4e1f59c258e68")
+    }
+  ],
+  todo: [
+    { text: 'Task 1', _id: new ObjectId("642e2ba919169f5252f7ed0e") },
+    { text: 'Task 2', _id: new ObjectId("642e2bae19169f5252f7ed15") },
+    { text: 'Task 3', _id: new ObjectId("642e2bb319169f5252f7ed1d") },
+    { text: 'Task 4', _id: new ObjectId("642e2bb619169f5252f7ed26") },
+    { text: 'Task 5', _id: new ObjectId("642e2bba19169f5252f7ed30") }
+  ],
+  doing: []
+}
+[4/10/2023, 12:49:14 AM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642df255abc4e1f59c258e67")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642df255abc4e1f59c258e68")
+    }
+  ],
+  todo: [
+    { text: 'Task 1', _id: new ObjectId("642e2ba919169f5252f7ed0e") },
+    { text: 'Task 2', _id: new ObjectId("642e2bae19169f5252f7ed15") },
+    { text: 'Task 3', _id: new ObjectId("642e2bb319169f5252f7ed1d") },
+    { text: 'Task 4', _id: new ObjectId("642e2bb619169f5252f7ed26") },
+    { text: 'Task 5', _id: new ObjectId("642e2bba19169f5252f7ed30") }
+  ],
+  doing: []
+}
+[4/10/2023, 12:49:42 AM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642df255abc4e1f59c258e67")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642df255abc4e1f59c258e68")
+    }
+  ],
+  todo: [
+    { text: 'Task 1', _id: new ObjectId("642e2ba919169f5252f7ed0e") },
+    { text: 'Task 2', _id: new ObjectId("642e2bae19169f5252f7ed15") },
+    { text: 'Task 3', _id: new ObjectId("642e2bb319169f5252f7ed1d") },
+    { text: 'Task 4', _id: new ObjectId("642e2bb619169f5252f7ed26") },
+    { text: 'Task 5', _id: new ObjectId("642e2bba19169f5252f7ed30") }
+  ],
+  doing: []
+}
+[4/10/2023, 12:49:44 AM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642df255abc4e1f59c258e67")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642df255abc4e1f59c258e68")
+    }
+  ],
+  todo: [
+    { text: 'Task 1', _id: new ObjectId("642e2ba919169f5252f7ed0e") },
+    { text: 'Task 2', _id: new ObjectId("642e2bae19169f5252f7ed15") },
+    { text: 'Task 3', _id: new ObjectId("642e2bb319169f5252f7ed1d") },
+    { text: 'Task 4', _id: new ObjectId("642e2bb619169f5252f7ed26") },
+    { text: 'Task 5', _id: new ObjectId("642e2bba19169f5252f7ed30") }
+  ],
+  doing: []
+}
+[4/10/2023, 12:55:14 AM] server	 employee-route.js - {
+  _id: new ObjectId("641902d2b9a84caff39b134c"),
+  empId: 1007,
+  done: [
+    {
+      text: 'go to bed',
+      _id: new ObjectId("642df255abc4e1f59c258e67")
+    },
+    {
+      text: 'Create ToDo List',
+      _id: new ObjectId("642df255abc4e1f59c258e68")
+    }
+  ],
+  todo: [
+    { text: 'Task 1', _id: new ObjectId("642e2ba919169f5252f7ed0e") },
+    { text: 'Task 2', _id: new ObjectId("642e2bae19169f5252f7ed15") },
+    { text: 'Task 3', _id: new ObjectId("642e2bb319169f5252f7ed1d") },
+    { text: 'Task 4', _id: new ObjectId("642e2bb619169f5252f7ed26") },
+    { text: 'Task 5', _id: new ObjectId("642e2bba19169f5252f7ed30") }
+  ],
+  doing: []
+}

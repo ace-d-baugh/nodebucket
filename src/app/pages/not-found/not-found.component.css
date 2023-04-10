@@ -28,12 +28,13 @@
 }
 
 .not-found-content {
+  min-width: 800px;
+  max-width: 1200px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
   font-family: var(--font-primary);
   font-weight: 700;
   color: var(--primary) !important;
@@ -45,8 +46,25 @@
   color: var(--warn) !important;
 }
 
-.pi-ban {
-  margin: 3rem;
-  font-size: 10rem;
-  font-weight: 700;
+.vortex {
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+/* svg animation */
+svg {
+  width: 100%;
+  height: 100%;
+  animation: rotate 20s linear infinite;
+}
+
+/* animate svg*/
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
